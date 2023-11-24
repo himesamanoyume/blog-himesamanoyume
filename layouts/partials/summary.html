@@ -1,0 +1,4 @@
+<section class="post-detail-txt">
+    {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+    {{ .Summary | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML}}
+</section>

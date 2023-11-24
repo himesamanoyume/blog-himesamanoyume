@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head" . }}
+</head>
+<body id="body" data-theme="auto" data-section="index">
+    <header class="header">
+        {{ partial "header" . }}
+    </header>
+    {{ partial "topTitle" . }}
+    <main class="main" data-url="index" data-keyword="">
+        <div class="home-container">
+            <div class="post-container">
+                <div class="post-page">
+                    <div class="post-page-container">
+                        <div class="post-page-container-nullSearch">404 Not Found, 请检查链接是否正确. </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="info-container">
+                {{ partial "infoContainer" . }}
+            </aside>
+            
+        </div>
+    </main>
+<footer class="footer">
+    {{ partial "footer" . }}
+</footer>
+</body>
+</html>

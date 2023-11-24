@@ -1,0 +1,33 @@
+# Change baseurl before deploy
+baseURL: 'https://blog.princessdreamland.top'
+
+paginate: 5
+
+menu:
+  main:
+    - name: 文章
+      pageRef: /post
+      weight: 1
+    - name: 动态
+      pageRef: /dynamic
+      weight: 2
+    - name: 工具
+      pageRef: /tools
+      weight: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4

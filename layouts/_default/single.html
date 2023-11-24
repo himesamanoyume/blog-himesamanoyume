@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head" . }}
+    </head>
+    <body id="body" data-theme="auto" data-section="single">
+        <header class="header">
+            {{ partial "header" . }}
+        </header>
+        {{ partial "topTitle" . }}
+        <main class="main" data-url="post" data-keyword="">
+            <div class="home-container">
+                <div class="post-container">
+                    <div class="post" data-postURL="postDetail">
+                        <div class="post-Img-container">
+                            {{ $banner := .Page.Resources.Match "*index.webp"}}
+                            {{ if ge (len $banner) 1 }}
+                            {{ $banner := index $banner 0 }}
+                            <div class="fiximg" style="width: 100%;;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+                                <a class="fiximg__container" style="padding-bottom: 30%;height: 0;display: block;margin: 0">
+                                    <img loading="lazy" src="{{ $banner.Permalink }}" data-zommable>
+                                </a>
+                            </div>
+                            {{end}}
+                        </div>
+                        <div class="post-txt-container">
+                                <div class="post-detail-title">
+                                    {{.Title}}
+                                </div>
+                                <hr>
+                            <div class="post-detail-postInfo-container">
+                                <div class="post-detail-datetime">
+                                    {{printf "%s" (.Date.Format "2006-01-02")}}
+                                </div>
+                            </div>
+                            {{ partial "detail" . }}
+                        </div>
+                    </div>
+                </div>
+                <aside class="info-container">
+                    {{ partial "infoContainer" . }}
+                </aside>
+                
+            </div>
+        </main>
+        <footer class="footer">
+            {{ partial "footer" . }}
+        </footer>
+    </body>
+</html>

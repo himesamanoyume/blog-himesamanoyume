@@ -1,0 +1,6 @@
+<div class="post-detail-txt">
+    {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+    {{ $wrappedHighlight := printf "<div class=\"highlight-wrapper\">${1}</div>" }}
+    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | replaceRE "(<div class=\"highlight\">(?:.|\n)+?</div>)" $wrappedHighlight | safeHTML}}
+    <hr>
+</div>

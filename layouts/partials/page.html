@@ -1,0 +1,88 @@
+{{ $paginator := .Scratch.Get "paginator" }}
+<div class="post-page">
+    <div class="post-page-container">
+        {{ if eq $paginator.TotalPages 0}}
+            <div class="post-page-container-nullSearch">暂无内容</div>
+        {{end}}
+        
+        {{ if ne $paginator.TotalPages 0}}
+            <div class="post-page-container-content-left">
+                {{if gt $paginator.PageNumber 1}}
+                    <a class="post-page-container-button" id="prePage" title="上一页" href="{{ $paginator.Prev.URL }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="40px">
+                            <path fill="none" stroke="var(--text-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"/>
+                        </svg>
+                    </a>
+                {{end}}
+                {{if gt (sub $paginator.PageNumber 4) 0}}
+                    <a class="post-page-container-button" id="firstPage" href="{{ $paginator.First.URL }}">1</a>
+                    <div class="post-page-container-currentPage">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="40px">
+                            <title>省略</title>
+                            <circle fill="var(--page-current-color)" cx="256" cy="256" r="48"/>
+                            <circle fill="var(--page-current-color)" cx="416" cy="256" r="48"/>
+                            <circle fill="var(--page-current-color)" cx="96" cy="256" r="48"/>
+                        </svg>
+                    </div>
+                {{end}}
+                {{if and ( gt (sub $paginator.PageNumber 3) 0 ) (ne (sub $paginator.PageNumber 4) 1)}}
+                    <a class="post-page-container-button" id="currentPre3Page" href="{{ $paginator.Prev.Prev.Prev.URL }}">
+                        {{sub $paginator.PageNumber 3}}
+                    </a>
+                {{end}}
+                {{if gt (sub $paginator.PageNumber 2) 0}}
+                    <a class="post-page-container-button" id="currentPre2Page" href="{{ $paginator.Prev.Prev.URL }}">
+                        {{sub $paginator.PageNumber 2}} 
+                    </a>
+                {{end}}
+                {{if gt (sub $paginator.PageNumber 1) 0}}
+                    <a class="post-page-container-button" id="currentPrePage" href="{{ $paginator.Prev.URL }}">
+                        {{sub $paginator.PageNumber 1}}
+                    </a>
+                {{end}}
+            </div>
+            {{if ne $paginator.PageNumber nil}}
+                <div class="post-page-container-currentPage" id="currentPage">
+                    {{$paginator.PageNumber}}
+                </div>
+            {{end}}
+            <div class="post-page-container-content-right">
+                {{if le (add $paginator.PageNumber 1) $paginator.TotalPages}}
+                    <a class="post-page-container-button" id="currentNextPage" href="{{ $paginator.Next.URL }}">
+                        {{add $paginator.PageNumber 1}}
+                    </a>
+                {{end}}
+                {{if le (add $paginator.PageNumber 2) $paginator.TotalPages}}
+                    <a class="post-page-container-button" id="currentNext2Page" href="{{ $paginator.Next.Next.URL }}">
+                        {{add $paginator.PageNumber 2}}
+                    </a>
+                {{end}}
+                {{if and ( le (add $paginator.PageNumber 3) $paginator.TotalPages) (ne (add $paginator.PageNumber 4) $paginator.TotalPages)}}
+                    <a class="post-page-container-button" id="currentNext3Page" href="{{ $paginator.Next.Next.Next.URL }}">
+                        {{add $paginator.PageNumber 3}}
+                    </a>
+                {{end}}
+                {{if le (add $paginator.PageNumber 4) $paginator.TotalPages}}
+                    <div class="post-page-container-currentPage">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="40px">
+                            <title>省略</title>
+                            <circle fill="var(--page-current-color)" cx="256" cy="256" r="48"/>
+                            <circle fill="var(--page-current-color)" cx="416" cy="256" r="48"/>
+                            <circle fill="var(--page-current-color)" cx="96" cy="256" r="48"/>
+                        </svg>
+                    </div>
+                    <a class="post-page-container-button" id="lastPage" href="{{ $paginator.Last.URL }}">
+                        {{$paginator.TotalPages}}
+                    </a>
+                {{end}}
+                {{if lt $paginator.PageNumber $paginator.TotalPages}}
+                    <a class="post-page-container-button" id="nextPage" title="下一页" href="{{ $paginator.Next.URL }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="40px">
+                            <path fill="none" stroke="var(--text-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/>
+                        </svg>
+                    </a>
+                {{end}}
+            </div>
+        {{end}}
+    </div>
+</div>

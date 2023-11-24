@@ -1,0 +1,91 @@
+.post{
+    background-color:var(--post-bg);
+    padding: 15px 20px 15px 20px;
+    display: block;
+    cursor: inherit;
+    margin-bottom: 10px;
+    margin-top: 0;
+    min-height: 50px;
+    width: 100%;
+    border: 0;
+    color:var(--text-color);
+    box-shadow: 4px 0 0 0 var(--tianyi-color) inset,4px 4px 14px -13px var(--post-shadow-color);
+    word-break: break-all;
+}
+
+@media screen and (max-width: 990px){
+    .main>.home-container>.info-container>.info-container-inner{
+        margin-top: 0;
+    }
+    .info{
+        margin-top: 0;
+    }
+}
+
+.post:hover{
+    box-shadow: 4px 0 0 0 var(--tianyi-color) inset,4px 4px 14px -13px var(--post-shadow-color);
+}
+.post-noblue{
+    word-break: break-all;
+    background-color:var(--post-bg);
+    padding: 15px 20px 15px 20px;
+    display: inline-flex;
+    cursor: inherit;
+    margin-bottom: 10px;
+    min-height: 50px;
+    width: 100%;
+    border: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    color:var(--text-color);
+    box-shadow: 4px 4px 14px -13px var(--post-shadow-color);
+}
+.post-container{
+    box-shadow: 0 0 0 0 var(--post-bg) inset;
+}
+.post-important{
+    word-break: break-all;
+    background-color:var(--post-important-bg);
+    padding: 15px 20px 15px 20px;
+    cursor: inherit;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    min-height: 50px;
+    width: 100%;
+    border: 0;
+    color:var(--text-color);
+    box-shadow: 4px 0 0 0 var(--tianyi-color) inset,4px 4px 14px -13px var(--post-shadow-color);
+}
+.post-resume-container{
+    word-break: break-all;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.svg-content{
+    height: 100%;
+}
+.post-resume-content{
+    margin: 5px 20px 5px 20px;
+    display: inline-flex;
+}
+.post-resume-content-txt{
+    margin: 0 20px 0 20px;
+    display: inline-flex;
+    justify-content: left;
+}
+
+.post-resume-link-container{
+    text-align: right;
+    margin: 10px 0 10px 0;
+}
+
+.post-resume-link-container a{
+    color: var(--text-color);
+}

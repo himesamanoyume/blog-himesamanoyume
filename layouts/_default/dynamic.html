@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head" . }}
+</head>
+<body id="body" data-theme="auto" data-section="dynamic">
+    <header class="header">
+        {{ partial "header" . }}
+    </header>
+    {{ partial "topTitle" . }}
+    <main class="main" data-url="dynamic" data-keyword="">
+        <div class="home-container">
+            <div class="post-container">
+                {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}
+                {{ range $paginator.Pages }}
+
+                {{end}}
+                {{ .Scratch.Set "paginator" $paginator }}
+                {{ partial "page" . }}
+            </div>
+            
+            <aside class="info-container">
+                {{ partial "infoContainer" . }}
+            </aside>
+            
+        </div>
+    </main>
+<footer class="footer">
+    {{ partial "footer" . }}
+</footer>
+</body>
+</html>

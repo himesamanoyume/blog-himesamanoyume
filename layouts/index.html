@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head" . }}
+    </head>
+    <body id="body" data-theme="auto" data-section="index">
+        <header class="header">
+            {{ partial "header" . }}
+        </header>
+        {{ partial "topTitle" . }}
+        <main class="main" data-url="index" data-keyword="">
+            <div class="home-container">
+                <div class="post-container">
+                    {{ .Content}}
+                    {{/*  {{ partial "main-post-part" . }}  */}}
+                </div>
+                <aside class="info-container">
+                    {{ partial "infoContainer" . }}
+                </aside>
+            </div>
+        </main>
+        <footer class="footer">
+            {{ partial "footer" . }}
+        </footer>
+    </body>
+</html>
