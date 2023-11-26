@@ -41,7 +41,9 @@ keywords:
 
 同原神操作一样
 
-留下最主要的为`MIHOYOSDK_ADL_PROD_CN_h3123967166`
+留下最主要的关服为`MIHOYOSDK_ADL_PROD_CN_h3123967166`
+
+b服为`MIHOYOSDK_ADL_PROD_CN_14_0_h4052138443`
 
 有额外需求的操作仍然同上
 
