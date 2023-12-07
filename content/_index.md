@@ -6,52 +6,55 @@ url: ''
 
 <img id="_index" loading="lazy" src="" alt="头图" title="头图" data-zoomable/>
 
-<h1>关于本站</h1><span class="important">网站处于正式版RC阶段</span>
+<h1>关于本站</h1>
 <div class="main-post-content">
-    <h2>个人信息</h2>
+    <h2>个人成分</h2>
     <div class="main-post-content-txt">
         <p>
-            Unity3D/Unreal学习中, 编程语言C#/C++学习中
+            Unity3D, C#/python/html/js/css
         </p>
         <p>
-            <ruby>第一人称射击<rt class="ttt" data-rt="FPS"></rt></ruby>游戏爱好, PC DIY知识储备OK, <ruby>动漫宅<rt class="ttt" data-rt="Otaku"></rt>
+            Unreal/C++学习中
         </p>
         <p>
-            <ruby>日本商业动画作画MAD爱好者<rt class="ttt" data-rt="伪作豚"></rt>, 爱看日本<ruby>新番<rt class="ttt" data-rt="Bangumi">
+            <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者
+        </p>
+        <h3>爱好</h3>
+        <p>
+            主要为<ruby>第一人称射击<rt class="ttt" data-rt="FPS"></rt></ruby>/<ruby>第三人称射击<rt class="ttt" data-rt="TPS"></rt></ruby>游戏, 但类型不受限
         </p>
         <p>
-            头像画师
-            <a href="https://www.pixiv.net/users/1198913" target="_blank">
-                @<ruby>
-                    ほし<rt class="ttt" data-rt="ho shi"></rt>
-                </ruby>
+            日本商业动画<ruby>作画MAD<rt class="ttt" data-rt="作豚"></rt>, 日本新番
+        </p>
+        <h3>头像画师</h3>
+        <p>
+            <a href="https://www.pixiv.net/users/126858" target="_blank">
+                @ゆさの
             </a>
         </p>
         <h3>喜欢的插画画师</h3>
         <p>
             <a href="https://www.pixiv.net/users/25760573" target="_blank">
-                @rurudo
-            </a>,
+                @rurudo</a>,
             <a href="https://www.pixiv.net/users/16731" target="_blank">
-                @<ruby>
-                    玉<rt class="ttt" data-rt="tama"></rt>
-                    之<rt class="ttt" data-rt="no"></rt>
-                    け<rt class="ttt" data-rt="ke"></rt>
-                    だ<rt class="ttt" data-rt="da"></rt>
-                    ま<rt class="ttt" data-rt="ma"></rt>
-                </ruby>
-            </a>,等..
+                @<ruby>玉<rt class="ttt" data-rt="tama"></rt>
+                    之<rt class="ttt" data-rt="no"></rt>けだま
+                </ruby></a>,
+            <a href="https://www.pixiv.net/users/16051830" target="_blank">
+                @Alpha</a>,
+            <a href="https://www.pixiv.net/users/24234" target="_blank">
+                @mignon</a>,
+            <a href="https://www.pixiv.net/users/6049901" target="_blank">
+                @<ruby>szcb911<rt class="ttt" data-rt="鬼針草"></rt></ruby></a>,等..
         </p>
         <h3>喜欢的动画原画师</h3>
         <p>中村丰,阿部望,金子秀一</p>
         <h3>喜欢的VOCALOID P主</h3>
         <p>
             <a href="https://space.bilibili.com/177291194" target="_blank">
-                @DECO*27
-            </a>,
+                @DECO*27</a>,
             <a href="https://space.bilibili.com/203655966" target="_blank">
-                @<ruby>
-                    ピノキオピー<rt class="ttt" data-rt="PinocchioP"></rt>
+                @<ruby>ピノキオピー<rt class="ttt" data-rt="PinocchioP"></rt>
                 </ruby>
             </a>
         </p>
