@@ -319,6 +319,7 @@ textarea:-ms-input-placeholder {
     border: 0;
     background-color: var(--post-bg);
     width: 100%;
+    margin-bottom: 10px;
     height: 40px;
     box-shadow: 4px 4px 14px -13px var(--post-shadow-color)
 }

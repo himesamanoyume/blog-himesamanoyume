@@ -1,6 +1,6 @@
 ---
 title: 'Markdown语法笔记'
-date: 2022-01-12
+date: 2022-01-12T6:00:00+08:00
 keywords:
   - '笔记'
 ---
