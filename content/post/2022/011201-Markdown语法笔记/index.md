@@ -243,10 +243,10 @@ sequenceDiagram
 ```markdown
 ![图片名字](图片链接)
 
-![favicon](https://blog.princessdreamland.top/favicon.ico)
+![favicon](https://blog.himesamanoyume.top/favicon.ico)
 ```
 
-![favicon](https://blog.princessdreamland.top/favicon.ico)
+![favicon](https://blog.himesamanoyume.top/favicon.ico)
 
 > 区别就是图片链接最前面多了个"!"
 
@@ -328,10 +328,10 @@ left|right
 
 [跳转到temp 不带#](temp)
 
-[跳转到主页 不带#](https://blog.princessdreamland.top)
+[跳转到主页 不带#](https://blog.himesamanoyume.top)
 
 ```
 
 [跳转到temp 不带#](temp)
 
-[跳转到主页 不带#](https://blog.princessdreamland.top)
+[跳转到主页 不带#](https://blog.himesamanoyume.top)

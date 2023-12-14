@@ -1,17 +1,19 @@
-<nav class="nav">
-    <a id="nav-index" class="blogName" title="首页" href="{{ .Site.BaseURL }}">
-        HIMEBLOG
-    </a>
-    <div class="nav-container">
-        {{- $currentPage := . -}}
-        {{- range .Site.Menus.main -}}
-        {{- $pageMatch := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) -}}
-            <div class="nav-content">
-                <a class="nav-link" href="{{ .URL }}" id="{{ .URL }}">
-                    {{ .Name }}
-                    <div class="{{ if $pageMatch }}hover-bar-active{{else}}hover-bar{{ end }}"></div>
-                </a>
-            </div>
-        {{ end }}
-    </div>
-</nav>
+<div class="nav-out">
+    <nav class="nav">
+        <a id="nav-index" class="blogName" title="首页" href="{{ .Site.BaseURL }}">
+            HIMEBLOG
+        </a>
+        <div class="nav-container">
+            {{- $currentPage := . -}}
+            {{- range .Site.Menus.main -}}
+            {{- $pageMatch := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) -}}
+                <div class="nav-content">
+                    <a class="nav-link" href="{{ .URL }}" id="{{ .URL }}">
+                        {{ .Name }}
+                        <div class="{{ if $pageMatch }}hover-bar-active{{else}}hover-bar{{ end }}"></div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </nav>
+</div>

@@ -2,7 +2,7 @@
 // @name         B站成分检测器Pro
 // @version      2.841
 // @author       xulaupuz,trychen,姫様の夢
-// @namespace    princessdreamland.design
+// @namespace    himesamanoyume.design
 // @license      GPLv3
 // @description  B站评论区自动标注成分,请勿滥用  /免责声明:本脚本原作者为xulaupuz,trychen,现该脚本为姫様の夢用作学习用途制作,且仅在极小范围内发布供个别人员学习,任何未经本人允许而大范围散播该脚本所造成的后果皆与本人姫様の夢无关,本人不承担相关法律责任
 // @match        https://www.bilibili.com/video/*
@@ -13,7 +13,7 @@
 // @match        https://space.bilibili.com/*
 // @match        https://www.bilibili.com/read/*
 // @match        https://live.bilibili.com/*
-// @icon         https://princessdreamland.design/_jsp/favicon.ico
+// @icon         https://himesamanoyume.design/_jsp/favicon.ico
 // @connect      bilibili.com
 // @grant        GM_xmlhttpRequest
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js
