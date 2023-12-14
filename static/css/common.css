@@ -50,7 +50,7 @@ body>header>.nav-out>.nav>.blogName {
 
     .main>.home-container>.info-container>.info-container-inner {
         transform: rotateY(0);
-        margin-top: 3px;
+        margin-top: 10px;
     }
 
     .main>.home-container>.info-container>.info-container-inner>.info {
@@ -82,7 +82,7 @@ body>header>.nav-out>.nav>.blogName {
     .main>.home-container>.post-container {
         max-width: 100%;
         width: 100%;
-        padding: 10px 15px 0 15px
+        padding: 0 15px 0 15px
     }
 
     .main>.home-container>.post-container>.main-post {
@@ -138,6 +138,19 @@ body>header>.nav-out>.nav>.blogName {
         padding: 0 5px;
         min-width: 50px;
         line-height: 37px;
+        transition-duration: .2s;
+    }
+
+    body>header>.nav-out>.nav>.nav-container>.nav-content>.nav-link-active {
+        padding: 0 5px;
+        min-width: 50px;
+        line-height: 37px;
+        text-decoration: none;
+    }
+
+    body>header>.nav-out>.nav>.nav-container>.nav-content>.nav-link-active:hover {
+        color: var(--tianyi-color);
+        transition-duration: .2s;
     }
 
     body>header>.nav-out>.nav>.nav-container>.nav-content {
@@ -263,7 +276,7 @@ body[data-theme=light] {
     width: 775px;
     height: 100%;
     border: 0;
-    padding: 10px 10px 0 10px
+    padding: 0 10px 0 10px
 }
 
 input::-webkit-input-placeholder,
@@ -295,6 +308,7 @@ textarea:-ms-input-placeholder {
     backdrop-filter: blur(4px);
     cursor: default;
     display: block;
+    margin-top: 10px;
     min-height: 100px;
     width: 100%;
     border: 0;
@@ -333,7 +347,7 @@ textarea:-ms-input-placeholder {
     border: 0;
     background-color: var(--post-bg);
     width: 100%;
-    margin-bottom: 10px;
+    margin-top: 10px;
     height: 40px;
     box-shadow: 4px 4px 14px -13px var(--post-shadow-color)
 }
@@ -406,6 +420,7 @@ textarea:-ms-input-placeholder {
 }
 
 .main-post {
+    margin-top: 10px;
     text-align: center;
     background-color: var(--post-bg);
     backdrop-filter: blur(4px);
@@ -471,11 +486,11 @@ textarea:-ms-input-placeholder {
 
 .main-post-content {
     text-align: left;
-    margin: 5px 20px
+    margin: 0 20px
 }
 
 .main-post-content-txt {
-    margin: 8px 10px
+    padding: 8px 10px
 }
 
 a {
@@ -488,8 +503,10 @@ a:hover {
 }
 
 .nav-content>a {
-    color: var(--text-color)
+    color: var(--text-color);
 }
+
+
 
 .nav-index>a:hover {
     text-decoration: none
@@ -527,7 +544,7 @@ a:hover {
     width: 100%;
     cursor: default;
     min-height: 60px;
-    margin: 0 0 10px
+    margin: 0
 }
 
 .post-txt-container-title {
@@ -1245,7 +1262,8 @@ header {
 
 .blogName:hover {
     color: var(--tianyi-color);
-    text-decoration: none
+    text-decoration: none;
+    transition-duration: .2s;
 }
 
 .nav-container {
@@ -1264,8 +1282,9 @@ header {
     cursor: pointer;
     text-align: center;
     justify-content: center;
-    line-height: 57px;
-    min-width: 64px
+    line-height: 60px;
+    min-width: 64px;
+    transition-duration: .2s;
 }
 
 .nav-content:hover a .hover-bar {
@@ -1274,7 +1293,26 @@ header {
 
 .nav-link:hover {
     color: var(--tianyi-color);
-    text-decoration: none
+    text-decoration: none;
+    box-shadow: 0 -3px 0 0 var(--tianyi-color) inset;
+    transition-duration: .2s;
+}
+
+.nav-link-active {
+    padding: 0 15px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    line-height: 60px;
+    min-width: 64px;
+    color: var(--tianyi-color);
+    box-shadow: 0 -3px 0 0 var(--tianyi-color)inset;
+}
+
+.nav-link-active:hover {
+    text-decoration: none;
+    color: var(--tianyi-color);
+    transition-duration: .2s;
 }
 
 .hover-bar-active {
