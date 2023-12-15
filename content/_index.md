@@ -4,7 +4,7 @@ url: ''
 ---
 <div class="main-post">
 
-<img id="_index" loading="lazy" src="" alt="头图" title="头图" data-zoomable/>
+<img id="_index" loading="lazy" src="" data-zoomable/>
 
 <h1>关于本站</h1>
 <div class="main-post-content">
