@@ -30,7 +30,7 @@ body>header>.nav-out>.nav>.blogName {
     /* color: transparent */
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1005px) {
     .nav {
         flex-direction: column;
         margin: 0 auto 0 auto;
@@ -1247,6 +1247,7 @@ header {
     color: var(--text-color);
     box-shadow: 0 6px 24px -14px var(--post-shadow-color);
     background-color: var(--post-bg);
+    transition-duration: .2s;
 }
 
 .blogName {

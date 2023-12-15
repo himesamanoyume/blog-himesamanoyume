@@ -13,7 +13,7 @@
     word-break: break-all;
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 1005px){
     .main>.home-container>.info-container>.info-container-inner{
         margin-top: 0;
     }
