@@ -2,7 +2,7 @@
  
 # TODO
 
-- Img文件夹中一堆过期迁移图片未处理
+- None
 
 # CHANGELOG
 
