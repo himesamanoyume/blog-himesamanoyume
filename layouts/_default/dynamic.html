@@ -13,7 +13,35 @@
             <div class="post-container">
                 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}
                 {{ range $paginator.Pages }}
-
+                <div class="post" style="min-height: 50px;">
+                    <div class="post-Img-container" style="max-height:500px;justify-content: center;display: inline-flex;flex-wrap: wrap;-ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;flex: none;">
+                        {{ $banner := .Page.Resources.Match "*.webp"}}
+                        {{ if eq (len $banner) 1 }}
+                            {{ $banner := index $banner 0 }}
+                            <div class="fiximg" style="min-width: 50%;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+                                <a href="{{$banner.Permalink}}">
+                                    <img loading="lazy" src="{{ $banner.Permalink }}" style="max-height: 500px;" data-zommable>
+                                </a>
+                            </div>
+                        {{ else }}
+                            {{ range $banner }}
+                                {{ $banner := index . }}
+                                    <div class="fiximg" style="width: 50%;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+                                        <a href="{{$banner.Permalink}}">
+                                            <img loading="lazy" src="{{ $banner.Permalink }}" style="max-height: 500px;" data-zommable>
+                                        </a>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="post-txt-container">
+                        {{ partial "summary" . }}
+                        <div class="post-txt-container-datetime">
+                            {{printf "%s" (.Date.Format "2006-01-02")}}
+                            <span class="important">{{.Keywords}}</span>
+                        </div>
+                    </div>
+                </div>
                 {{end}}
                 {{ .Scratch.Set "paginator" $paginator }}
                 {{ partial "page" . }}
