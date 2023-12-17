@@ -18,7 +18,7 @@
                         {{ $banner := .Page.Resources.Match "*.webp"}}
                         {{ if eq (len $banner) 1 }}
                             {{ $banner := index $banner 0 }}
-                            <div class="fiximg" style="min-width: 50%;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+                            <div class="fiximg" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
                                 <a href="{{$banner.Permalink}}">
                                     <img loading="lazy" src="{{ $banner.Permalink }}" style="max-height: 500px;" data-zommable>
                                 </a>
@@ -26,7 +26,7 @@
                         {{ else }}
                             {{ range $banner }}
                                 {{ $banner := index . }}
-                                    <div class="fiximg" style="width: 50%;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+                                    <div class="fiximg" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
                                         <a href="{{$banner.Permalink}}">
                                             <img loading="lazy" src="{{ $banner.Permalink }}" style="max-height: 500px;" data-zommable>
                                         </a>
