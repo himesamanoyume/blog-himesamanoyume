@@ -91,15 +91,20 @@ url: ''
     <img loading="lazy" src="./kita_ikuyo.webp" style="width:22%; left:68%;z-index:1004" title="Kita">
     <img loading="lazy" src="./nazo01.png" style="width:40%; left:1%;z-index:1000" title="銀花">
     <img loading="lazy" src="./ginka02.png" style="width:30%; left:37%;z-index:1005" title="Ginka">
+    <img loading="lazy" src="./Character_Clara_Game.webp" style="width:25%; left:70%;z-index:1003" title="克拉拉">
 </div>
 
 <div class="main-post-content">
     <h2>姓名</h2>
     <h6>不分先后不按顺序</h6>
     <div class="main-post-content-txt">
-        <span class="important">原神...启动！</span>
+        <span class="important">原神</span>
         <p>
             <a href="./Character_Yoimiya_Full_Wish.webp" target="_blank"><ruby>宵宫<rt class="ttt" data-rt="Yoimiya"></rt></ruby></a>
+        <p>
+        <span class="important">崩坏:星穹铁道</span>
+        <p>
+            <a href="./Character_Clara_Game.webp" target="_blank"><ruby>克拉拉<rt class="ttt" data-rt="Clara"></rt></ruby></a>
         <p>
         <span class="important">GINKA</span>
         <p>
@@ -108,10 +113,10 @@ url: ''
         </p>
         <span class="important">蔚蓝档案(ブルーアーカイブ)</span>
         <p>
-            <a href="./Azusa_Swimsuit_Portrait.webp" target="_blank">白洲梓(<ruby>白洲<rt class="ttt" data-rt="Shirasu"></rt>アズサ<rt class="ttt" data-rt="Azusa"></rt></ruby>)</a>、
+            <a href="./Miyako_(Swimsuit)_full.webp" target="_blank">月雪宫子(<ruby>月雪<rt class="ttt" data-rt="Tsukiyuki"></rt>ミヤコ<rt class="ttt" data-rt="Miyako"></rt></ruby>)</a>、
             <a href="./Mika_School_Swimsuit_Portrait.webp" target="_blank">圣园未花(<ruby>聖園<rt class="ttt" data-rt="Misono"></rt>ミカ<rt class="ttt" data-rt="Mika"></rt></ruby>)</a>、
             <a href="./Mari_Gym_Portrait.webp" target="_blank">伊落玛丽(<ruby>伊落<rt class="ttt" data-rt="Iochi"></rt>マリー<rt class="ttt" data-rt="Mari"></rt></ruby>)</a>、
-            <a href="./Miyako_(Swimsuit)_full.webp" target="_blank">月雪宫子(<ruby>月雪<rt class="ttt" data-rt="Tsukiyuki"></rt>ミヤコ<rt class="ttt" data-rt="Miyako"></rt></ruby>)</a>
+            <a href="./Azusa_Swimsuit_Portrait.webp" target="_blank">白洲梓(<ruby>白洲<rt class="ttt" data-rt="Shirasu"></rt>アズサ<rt class="ttt" data-rt="Azusa"></rt></ruby>)</a>
         </p>
         <span class="important">BanG Dream! It's MyGO!!!!!</span>
         <p>
