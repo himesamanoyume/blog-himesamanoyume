@@ -79,7 +79,7 @@ url: ''
 
 <div class="mywaifu">
     <div class="fiximg" style="width: 100%;;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
-      <div class="fiximg__container" style="padding-bottom: 89.8000%;;height: 0;display: block;margin: 0">
+      <div class="fiximg__container" style="padding-bottom: 89.8000%;height: 0;display: block;margin: 0">
         <img loading="lazy" src="./Character_Yoimiya_Full_Wish.webp" title="Yoimiya" style="position: relative;z-index:1000"/>
       </div>
     </div>
@@ -91,7 +91,11 @@ url: ''
     <img loading="lazy" src="./kita_ikuyo.webp" style="width:22%; left:68%;z-index:1004" title="Kita">
     <img loading="lazy" src="./nazo01.png" style="width:40%; left:1%;z-index:1000" title="銀花">
     <img loading="lazy" src="./ginka02.png" style="width:30%; left:37%;z-index:1005" title="Ginka">
-    <img loading="lazy" src="./Character_Clara_Game.webp" style="width:25%; left:70%;z-index:1003" title="克拉拉">
+    <img loading="lazy" src="./Character_Clara_Game.webp" style="width:24%;bottom:3%;left:71%;z-index:1003" title="Clara">
+    <img loading="lazy" src="./murasame.png" style="width:25%;bottom:20%;left:20%;z-index:1003" title="Clara">
+    <img loading="lazy" src="./ameri_pic.png" style="width:18%;bottom:8%;left:65%;z-index:1000" title="Ameri">
+    <img loading="lazy" src="./asumi_pic.png" style="width:20%;bottom:18%;left:0%;z-index:1000" title="Asumi">
+    <img loading="lazy" src="./hiyori_pic.png" style="width:20%;bottom:15%;left:80%;z-index:1000" title="Hiyori">
 </div>
 
 <div class="main-post-content">
@@ -125,6 +129,16 @@ url: ''
         <span class="important">孤独摇滚!(ぼっち・ざ・ろっく!)</span>
         <p>
             <a href="./kita_ikuyo.webp" target="_blank"><ruby>喜多<rt class="ttt" data-rt="Kita"></rt>郁代<rt class="ttt" data-rt="Ikuyo"></rt></ruby></a>
+        </p>
+        <span class="important">千恋＊万花</span>
+        <p>
+            <a href="./murasame.png" target="_blank"><ruby>丛雨<rt class="ttt" data-rt="Murasame"></rt></ruby></a>
+        </p>
+        <span class="important">常轨脱离Creative(ハミダシクリエイティブ)/凸</span>
+        <p>
+            <a href="./ameri_pic.png" target="_blank">龙闲天梨(<ruby>竜閑<rt class="ttt" data-rt="Ryuukan"></rt>天梨<rt class="ttt" data-rt="Ameri"></rt></ruby>)</a>、
+            <a href="./hiyori_pic.png" target="_blank">和泉妃爱(<ruby>和泉<rt class="ttt" data-rt="Izumi"></rt>妃愛<rt class="ttt" data-rt="Hiyori"></rt></ruby>)</a>、
+            <a href="./asumi_pic.png" target="_blank">锦明日海(<ruby>錦<rt class="ttt" data-rt="Nishiki"></rt>あすみ<rt class="ttt" data-rt="Asumi"></rt></ruby>)</a>
         </p>
     </div>
 </div>

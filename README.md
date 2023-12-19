@@ -2,7 +2,7 @@
  
 # TODO
 
-- 主页加上克拉拉(不要史瓦罗)
+- None
 
 # CHANGELOG
 
