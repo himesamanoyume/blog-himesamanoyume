@@ -6,12 +6,12 @@ url: ''
 <img id="_index" loading="lazy" src="" data-zoomable/>
 
 <h1>关于本站</h1>
-<h6><a href="../">English</a><h6>
+<h4><a href="../">English</a></h4>
 
 
 <div class="main-post-content">
     <div class="main-post-content-txt">
-        <h2><span class="important">近期</h2>
+        <h4><span class="important">近期</h4>
         <p>
             Unity3D, C#/python/html/js/css
         </p>
@@ -21,20 +21,20 @@ url: ''
         <p>
             <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者
         </p>
-        <h2><span class="important">爱好</h2>
+        <h4><span class="important">爱好</h4>
         <p>
             主要为<ruby>第一人称射击<rt class="ttt" data-rt="FPS"></rt></ruby>/<ruby>第三人称射击<rt class="ttt" data-rt="TPS"></rt></ruby>游戏, 但类型不受限
         </p>
         <p>
             日本商业动画<ruby>作画MAD<rt class="ttt" data-rt="作豚"></rt>, 日本新番
         </p>
-        <h2><span class="important">头像画师</span></h2>
+        <h4><span class="important">头像画师</span></h4>
         <p>
             <a href="https://www.pixiv.net/users/126858" target="_blank">
                 @ゆさの
             </a>
         </p>
-        <h2><span class="important">喜欢的插画画师</span></h2>
+        <h4><span class="important">喜欢的插画画师</span></h4>
         <p>
             <a href="https://www.pixiv.net/users/25760573" target="_blank">
                 @rurudo</a>,
@@ -49,9 +49,9 @@ url: ''
             <a href="https://www.pixiv.net/users/6049901" target="_blank">
                 @<ruby>szcb911<rt class="ttt" data-rt="鬼針草"></rt></ruby></a>, 等..
         </p>
-        <h2><span class="important">喜欢的动画原画师</span></h2>
-        <p>中村丰,阿部望,金子秀一</p>
-        <h2><span class="important">喜欢的VOCALOID P主</span></h2>
+        <h4><span class="important">喜欢的动画原画师</span></h4>
+        <p>中村丰, 阿部望, 金子秀一</p>
+        <h4><span class="important">喜欢的VOCALOID P主</span></h4>
         <p>
             <a href="https://space.bilibili.com/177291194" target="_blank">
                 @DECO*27</a>,
