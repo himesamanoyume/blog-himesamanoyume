@@ -192,7 +192,7 @@ body>header>.nav-out>.nav>.blogName {
         --code-block-bg: #272822;
         --selection-text-bg: #505074;
         --zh-font-family: "Microsoft YaHei";
-        --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace
+        --code-font-family: Consolas, "Courier New", var(--zh-font-family)
     }
 }
 
@@ -214,8 +214,8 @@ body>header>.nav-out>.nav>.blogName {
         --post-important-bg: rgb(194, 194, 194);
         --selection-text-bg: rgb(177, 216, 221);
         --code-block-bg: #272822;
-        --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
-        --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace
+        --zh-font-family: "Microsoft YaHei";
+        --code-font-family: Consolas, "Courier New", var(--zh-font-family)
     }
 }
 
@@ -236,8 +236,8 @@ body[data-theme=dark] {
     --post-important-bg: #40405f;
     --selection-text-bg: #686897;
     --code-block-bg: #272822;
-    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
-    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace
+    --zh-font-family: "Microsoft YaHei";
+    --code-font-family: Consolas, "Courier New", var(--zh-font-family)
 }
 
 body[data-theme=light] {
@@ -257,8 +257,8 @@ body[data-theme=light] {
     --post-important-bg: rgb(194, 194, 194);
     --selection-text-bg: rgb(177, 216, 221);
     --code-block-bg: #272822;
-    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
-    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace
+    --zh-font-family: "Microsoft YaHei";
+    --code-font-family: Consolas, "Courier New", var(--zh-font-family)
 }
 
 .main {
@@ -495,7 +495,12 @@ textarea:-ms-input-placeholder {
 }
 
 .main-post-content-txt {
-    padding: 8px 10px
+    padding: 8px 10px;
+    font-size: 11px;
+}
+
+.main-post-content-txt p{
+    font-size: 16px;
 }
 
 a {
@@ -1522,6 +1527,10 @@ header {
     position: absolute;
     left: 0;
     bottom: 0
+}
+
+.mywaifu img:hover{
+    transform: translate3d(0, -5px, 0);
 }
 
 .post-txt-container-title h1,

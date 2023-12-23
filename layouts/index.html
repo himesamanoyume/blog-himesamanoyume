@@ -11,8 +11,10 @@
         <main class="main" data-url="index" data-keyword="">
             <div class="home-container">
                 <div class="post-container">
+                    <div class="main-post">
                     {{ .Content}}
-                    {{/*  {{ partial "main-post-part" . }}  */}}
+                    {{ partial "main-post-part" . }}
+                    </div>
                 </div>
                 <aside class="info-container">
                     <div id="info-container-inner" class="info-container-inner">

@@ -2,6 +2,15 @@
 baseURL: 'https://blog.himesamanoyume.top'
 
 paginate: 5
+defaultContentLanguage: en
+languages:
+  zh-cn:
+    weight: 1
+    params:
+      linkedin: https://blog.himesamanoyume.top/zh-cn
+  en:
+    weight: 2
+    
 
 menu:
   main:
