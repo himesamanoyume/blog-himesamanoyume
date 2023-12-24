@@ -5,7 +5,7 @@ url: ''
 <img id="_index" loading="lazy" src="" data-zoomable/>
 
 <h1>About</h1>
-<h4><a href="./zh-cn">中文</a></h4>
+<h4><a href="../zh-cn">中文</a></h4>
 
 <div class="main-post-content">
     <div class="main-post-content-txt">

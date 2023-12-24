@@ -10,6 +10,8 @@ languages:
       linkedin: https://blog.himesamanoyume.top/zh-cn
   en:
     weight: 2
+    params:
+      linkedin: https://blog.himesamanoyume.top/en
     
 
 menu:
