@@ -17,13 +17,13 @@ languages:
 menu:
   main:
     - name: 文章
-      pageRef: /post
+      URL: /post
       weight: 1
     - name: 动态
-      pageRef: /dynamic
+      URL: /dynamic
       weight: 2
     - name: 工具
-      pageRef: /tools
+      URL: /tools
       weight: 3
 
 markup:

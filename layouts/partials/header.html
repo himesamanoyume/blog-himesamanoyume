@@ -8,7 +8,7 @@
             {{- range .Site.Menus.main -}}
             {{- $pageMatch := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) -}}
                 <div class="nav-content">
-                    <a class="{{ if $pageMatch }}nav-link-active{{else}}nav-link{{ end }}" href="{{ .URL }}" id="{{ .URL }}">
+                    <a class="{{ if $pageMatch }}nav-link-active{{else}}nav-link{{ end }}" href="{{ .URL }}">
                         {{ .Name }}
                     </a>
                 </div>
