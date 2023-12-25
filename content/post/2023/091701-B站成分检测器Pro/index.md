@@ -17,7 +17,7 @@ keywords:
 
 而该脚本就是其中一个脚本被本人修改后得到的
 
-##### 如想使用请直接在代码块右上角点击复制,然后在油猴脚本新建一个脚本粘贴进去就行了
+[点击安装](https://key.himesamanoyume.top/B站成分检测器Pro-2.841.user.js)
 
 ```javascript
 // ==UserScript==
