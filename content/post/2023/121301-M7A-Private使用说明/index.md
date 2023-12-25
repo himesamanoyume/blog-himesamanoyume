@@ -2,7 +2,7 @@
 title: 'M7A-Private使用说明'
 date: 2023-12-13T6:00:00+08:00
 keywords:
-  - '笔记'
+  - '文章'
 ---
 
 适用于M7A Private v1.7.1.2 ~ 更高版本

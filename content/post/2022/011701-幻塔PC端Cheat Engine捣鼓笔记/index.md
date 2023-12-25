@@ -1,8 +1,8 @@
 ---
-title: '幻塔PC端Cheat Engine捣鼓笔记'
+title: '幻塔PC端Cheat Engine捣鼓记录'
 date: 2022-01-17T6:00:00+08:00
 keywords:
-  - '笔记'
+  - '文章'
 ---
 
 兴趣爱好，萌新中的萌新，**仅做记录用**

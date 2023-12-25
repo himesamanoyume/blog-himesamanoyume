@@ -2,7 +2,7 @@
 title: 'Linux服务器迁移到Windows建站经过'
 date: 2021-12-10T6:00:00+08:00
 keywords:
-  - '笔记'
+  - '文章'
 
 ---
 

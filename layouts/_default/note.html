@@ -3,12 +3,12 @@
 <head>
     {{ partial "head" . }}
 </head>
-<body id="body" data-theme="auto" data-section="tools">
+<body id="body" data-theme="auto" data-section="note">
     <header class="header">
         {{ partial "header" . }}
     </header>
     
-    <main class="main" data-url="tools" data-keyword="">
+    <main class="main" data-url="note" data-keyword="">
         <div class="home-container">
             <div class="post-container">
                 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}

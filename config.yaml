@@ -22,8 +22,8 @@ menu:
     - name: 动态
       URL: /dynamic
       weight: 2
-    - name: 工具
-      URL: /tools
+    - name: 笔记
+      URL: /note
       weight: 3
 
 markup:
