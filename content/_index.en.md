@@ -11,20 +11,20 @@ url: ''
     <div class="main-post-content-txt">
         <h4><span class="important">Lately</span></h4>
         <p>
-            Unity3D, C#/python/html/js/css
+            Technology stack: Unity3D/C#/python/html/js/css
         </p>
         <p>
-            Unreal/C++ studying
+            TODO: Unreal/C++ studying
         </p>
         <p>
             Otaku, <ruby>M<rt class="ttt" data-rt="Manga"></rt>A<rt class="ttt" data-rt="Anime"></rt>G<rt class="ttt" data-rt="Games"></rt></ruby> fundamentalist
         </p>
         <h4><span class="important">Hobby</span></h4>
         <p>
-            Mainly FPS/TPS games, but type unlimited. 
+            I mainly play FPS/TPS games, but there are no restrictions on the genre. 
         </p>
         <p>
-            Japan bangumi
+            Japan bangumi. 
         </p>
         <h4><span class="important">Avatar Artist</span></h4>
         <p>

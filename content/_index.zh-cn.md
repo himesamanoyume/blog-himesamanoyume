@@ -13,20 +13,20 @@ url: ''
     <div class="main-post-content-txt">
         <h4><span class="important">近期</h4>
         <p>
-            Unity3D, C#/python/html/js/css
+            技术栈: Unity3D/C#/python/html/js/css
         </p>
         <p>
-            Unreal/C++学习中
+            TODO: Unreal/C++学习中
         </p>
         <p>
-            <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者
+            <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者。
         </p>
         <h4><span class="important">爱好</h4>
         <p>
-            主要为<ruby>第一人称射击<rt class="ttt" data-rt="FPS"></rt></ruby>/<ruby>第三人称射击<rt class="ttt" data-rt="TPS"></rt></ruby>游戏, 但类型不受限
+            主要为<ruby>第一人称射击<rt class="ttt" data-rt="FPS"></rt></ruby>/<ruby>第三人称射击<rt class="ttt" data-rt="TPS"></rt></ruby>游戏, 但类型不受限。
         </p>
         <p>
-            日本商业动画<ruby>作画MAD<rt class="ttt" data-rt="作豚"></rt>, 日本新番
+            日本新番。
         </p>
         <h4><span class="important">头像画师</span></h4>
         <p>
