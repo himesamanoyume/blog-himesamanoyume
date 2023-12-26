@@ -9,7 +9,7 @@ url: ''
 
 <div class="main-post-content">
     <div class="main-post-content-txt">
-        <h4><span class="important">Lately</span></h4>
+        <h4><span class="important">Status</span></h4>
         <p>
             Technology stack: Unity3D/C#/python/html/js/css
         </p>
