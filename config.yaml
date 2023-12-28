@@ -18,12 +18,15 @@ menu:
   main:
     - name: 文章
       URL: /post
+      pageRef: /post
       weight: 1
     - name: 动态
       URL: /dynamic
+      pageRef: /dynamic
       weight: 2
     - name: 笔记
       URL: /note
+      pageRef: /note
       weight: 3
 
 markup:
