@@ -37,10 +37,10 @@ keywords:
 - - 点击`Tools`,选择`Install SIT`
 - - 选择`StayInTarkov.Client-1.9.8742.42820 - Tarkov Version: 0.13.9.1.27622`,安装
 - 用**大概免正版验证的联机补丁**替换掉`{Game}/BepInEx/plugins`下的`StayInTarkov.dll`
-- 下载安装**Redmin LAN 局域网联机软件**
+- 下载安装**Radmin LAN 局域网联机软件**
 - - 网络→加入网络→私人网络
 - - 填写对应名称和密码
-- 使用`SIT Manager`填写对应的`Address`为`http://{Redmin中服主的IP}:6969`
+- 使用`SIT Manager`填写对应的`Address`为`http://{Radmin中服主的IP}:6969`
 - `SIT Manager` Connect, 尼基塔原神 启动!
 
 ### 联机创房
