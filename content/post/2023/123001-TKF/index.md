@@ -27,7 +27,7 @@ keywords:
 - [[Onedrive] <ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby> [31.2MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESnFJVBZ1b1PsglaDqnDY4wBQaxcYEI3mXkr4cHbwUxK8w?e=8UfF4G)
 - [Radmin LAN 局域网联机软件](https://download.radmin-lan.cn/download/files/Radmin_LAN_1.4.4642.1.exe) / 带公网的服务器
 - 只需服主下载:[[Onedrive] SITCoop 服务端Mod 1.9.8742.42820 [15.1MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESsbNUTozU1GuLdhL24CbGwB4HefiDrfS3s2AmkLSJNv1g?e=YoSJkF)
-- 只需服主下载:[[Onedrive] 服务端SPT-AKI 3.8.0 [81.1MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EVhfOJG7LxVNk0K2BSGlmnkBeZzB4vVWRJO1Yl4a7vMUIg?e=bJpRUg)
+- 只需服主下载:[服务端SPT-AKI 3.7.6 Release-26535](https://dev.sp-tarkov.com/attachments/d549e35d-998c-4986-8c78-64571a6e083c)
 
 
 ## 步骤
@@ -109,3 +109,30 @@ keywords:
 }
 ```
 - 启动服务器,完成开服
+
+---
+
+## 进阶
+
+以上是基础流程,下面为进阶版,将为服务端和客户端新增改变AI逻辑的mod
+
+由于SIT模组的代码为专门编写,因此不兼容一般的SPT模组,所以必须使用被SIT开发组特别编译过的能够兼容SIT的mod版本,才能使用
+
+以下是整合包链接:
+
+- [[Onedrive] ExtendMod [45.4MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e)
+
+整合包分为`GameSide`,`ServerSide`,GameSide为所有人都需要安装,ServerSide则只需要服主安装
+
+将`GameSide`里的内容直接放入到`{Game}/`下
+
+将`ServerSide`里的内容直接放入到`{Server}/`下
+
+ExtendMod中包含:
+
+- `SAIN`:改变AI逻辑MOD
+- `BigBrain`:SAIN前置MOD
+- `Waypoints`:SAIN前置MOD
+- `ConfigurationManager`:mod配置管理器(未安装SAIN时在游戏中F1打开,安装SAIN后为F12打开)
+
+整合包的内容必须适配本文最初提到的服务端版本和游戏版本,若全程都已按照本文教程安装,那么整合包应该可以直接使用
