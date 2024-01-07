@@ -130,9 +130,10 @@ keywords:
 
 ExtendMod中包含:
 
-- `SAIN`:改变AI逻辑MOD
-- `BigBrain`:SAIN前置MOD
-- `Waypoints`:SAIN前置MOD
+- `SAIN`:大型改变AI逻辑MOD
+- `BigBrain`:前置MOD
+- `Waypoints`:前置MOD
+- `LootingBots`:改变AI逻辑MOD,使得AI会进行战利品搜刮并更新自己身上的装备
 - `ConfigurationManager`:mod配置管理器(未安装SAIN时在游戏中F1打开,安装SAIN后为F12打开)
 
 整合包的内容必须适配本文最初提到的服务端版本和游戏版本,若全程都已按照本文教程安装,那么整合包应该可以直接使用
