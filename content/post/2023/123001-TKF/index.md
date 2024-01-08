@@ -130,21 +130,21 @@ keywords:
 
 目前ExtendMod中包含:
 
-- `SAIN`:大型AI逻辑改变MOD,完全取代战斗逻辑,F6打开图形配置界面
+- [SAIN/原文链接](https://hub.sp-tarkov.com/files/file/1062-sain-2-0-solarint-s-ai-modifications-full-ai-combat-system-replacement/):大型AI逻辑改变MOD,完全取代战斗逻辑,F6打开图形配置界面
 - - 会根据声音做出反应,如听到枪声会前往侦察,听到玩家掏手雷会主动出击
 - - 交战时AI会做出更符合玩家的操作,如受伤会冲刺躲藏到掩体后回状态,从掩体后进行侧身攻击或者盲射
 - - 索敌范围会受到天空亮度和天气影响,会被植物遮挡视线,不再能够透视
 - - 会出现小组集体行动
 - `BigBrain`:前置MOD
 - `Waypoints`:前置MOD
-- `LootingBots`:掠夺BOT,AI逻辑改变MOD。
+- [LootingBots/原文链接](https://hub.sp-tarkov.com/files/file/1096-looting-bots/):掠夺BOT,AI逻辑改变MOD
 - - AI会定期检测周围的战利品,会像玩家一样进行搜刮,同时换掉身上的武器装备,也会将搜刮到的高价值物品放入背包
 - - AI PMC不再会以身上直接带着高价值物品的状态出生
 - `ConfigurationManager`:mod配置管理器(未安装SAIN时在游戏中F1打开,安装SAIN后为F12打开)
 
 **将来整合包会加入的MOD**
 
-- `QuestingBots`[SIT尚未完成适配]:AI逻辑改变MOD。
+- [QuestingBots/原文链接](https://hub.sp-tarkov.com/files/file/1534-questing-bots/#overview)`SIT尚未完成适配`:AI逻辑改变MOD
 - - 模拟线上战局玩家数量的AI PMC会在开局时刻立即生成在随机PMC复活点
 - - AI PMC会随机获得塔科夫中真实的任务作为目标,将会尝试前往任务地点放置物品,或者击杀敌人等来完成任务,不再简单地在出生区域巡逻;
 - - 可能会出现组队PMC,其他成员陪同完成队长PMC的任务
