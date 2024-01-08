@@ -19,7 +19,7 @@ keywords:
 
 - [[Onedrive] 游戏本体 0.14.0.0.28375 [23.9GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EVQxM56DgwxGl_VOcNK2ezkB6zUqfM2bKB_vYTz2PY2x2A?e=JDQxJy)
 - [[Onedrive] 降级补丁 0.14.0.0.28375 → 0.13.9.1.27622 [2.45GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ET3ZSu2wMDtPsXFJ-qMjvd4B_9PlwjcFsLkIcBam8OfK-w?e=HvhaLV)
-- [[Onedrive] 大概免正版验证的联机补丁 [500KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW)
+- [[Onedrive] 免正版验证的联机补丁 [500KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW)
 - [.NET Runtime 专用启动器必需的运行环境](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer)
 
 如果<ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby>能正常启动的话也可以不安装,但可能会出现界面错乱
@@ -45,7 +45,7 @@ keywords:
 - - `EFT Settings`中选择`EFT Path`的路径为`{Game}`
 - - 点击`Tools`,选择`Install SIT`
 - - 选择`StayInTarkov.Client-1.9.8742.42820 - Tarkov Version: 0.13.9.1.27622`,安装
-- 用**大概免正版验证的联机补丁**替换掉`{Game}/BepInEx/plugins`下的`StayInTarkov.dll`
+- 用**免正版验证的联机补丁**替换掉`{Game}/BepInEx/plugins`下的`StayInTarkov.dll`
 
 #### 如果是局域网联机
 
@@ -120,20 +120,34 @@ keywords:
 
 以下是整合包链接:
 
-- [[Onedrive] ExtendMod [45.4MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e)
+- [[Onedrive] ExtendMod [45.4MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.8)
 
-整合包分为`GameSide`,`ServerSide`,GameSide为所有人都需要安装,ServerSide则只需要服主安装
+整合包分为`GameSide`,`ServerSide`
 
-将`GameSide`里的内容直接放入到`{Game}/`下
+将`GameSide`里的内容直接放入到`{Game}/`下,GameSide为所有人都需要安装
 
-将`ServerSide`里的内容直接放入到`{Server}/`下
+将`ServerSide`里的内容直接放入到`{Server}/`下,ServerSide则只需要服主安装
 
-ExtendMod中包含:
+目前ExtendMod中包含:
 
-- `SAIN`:大型改变AI逻辑MOD
+- `SAIN`:大型AI逻辑改变MOD,完全取代战斗逻辑,F6打开图形配置界面
+- - 会根据声音做出反应,如听到枪声会前往侦察,听到玩家掏手雷会主动出击
+- - 交战时AI会做出更符合玩家的操作,如受伤会冲刺躲藏到掩体后回状态,从掩体后进行侧身攻击或者盲射
+- - 索敌范围会受到天空亮度和天气影响,会被植物遮挡视线,不再能够透视
+- - 会出现小组集体行动
 - `BigBrain`:前置MOD
 - `Waypoints`:前置MOD
-- `LootingBots`:改变AI逻辑MOD,使得AI会进行战利品搜刮并更新自己身上的装备
+- `LootingBots`:掠夺BOT,AI逻辑改变MOD。
+- - AI会定期检测周围的战利品,会像玩家一样进行搜刮,同时换掉身上的武器装备,也会将搜刮到的高价值物品放入背包
+- - AI PMC不再会以身上直接带着高价值物品的状态出生
 - `ConfigurationManager`:mod配置管理器(未安装SAIN时在游戏中F1打开,安装SAIN后为F12打开)
 
-整合包的内容必须适配本文最初提到的服务端版本和游戏版本,若全程都已按照本文教程安装,那么整合包应该可以直接使用
+**将来整合包会加入的MOD**
+
+- `QuestingBots`[SIT尚未完成适配]:AI逻辑改变MOD。
+- - 模拟线上战局玩家数量的AI PMC会在开局时刻立即生成在随机PMC复活点
+- - AI PMC会随机获得塔科夫中真实的任务作为目标,将会尝试前往任务地点放置物品,或者击杀敌人等来完成任务,不再简单地在出生区域巡逻;
+- - 可能会出现组队PMC,其他成员陪同完成队长PMC的任务
+- - 如果出生时距离过近可能会让PMC直接突脸玩家,且如果靠近空投区域也会去抢空投
+
+> 整合包的内容必须适配本文提到的服务端版本和游戏版本,若全程都已按照本文教程安装,那么整合包应该可以直接使用
