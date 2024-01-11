@@ -37,7 +37,7 @@
                     <div class="post-txt-container">
                         {{ partial "summary" . }}
                         <div class="post-txt-container-datetime">
-                            {{printf "%s" (.Date.Format "2006-01-02")}}
+                            {{printf "%s" (.Date.Format "2006-01-02 15:04")}}
                             <span class="important">{{.Keywords}}</span>
                         </div>
                     </div>
