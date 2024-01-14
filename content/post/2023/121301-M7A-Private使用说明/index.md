@@ -1,13 +1,12 @@
 ---
 title: 'M7A-Private使用说明'
 date: 2023-12-13T6:00:00+08:00
+description: '内部软件 切勿外传'
 keywords:
   - '文章'
 ---
 
 适用于M7A Private v1.7.1.2 ~ 更高版本
-
-> 内部软件 切勿外传
 
 <!--more-->
 
