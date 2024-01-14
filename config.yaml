@@ -2,30 +2,15 @@
 baseURL: 'https://blog.himesamanoyume.top'
 
 paginate: 5
-defaultContentLanguage: en
-languages:
-  zh-cn:
-    weight: 1
-    params:
-      linkedin: https://blog.himesamanoyume.top/zh-cn
-  en:
-    weight: 2
-    params:
-      linkedin: https://blog.himesamanoyume.top/en
-    
-
 menu:
   main:
     - name: 文章
-      URL: /post
       pageRef: /post
       weight: 1
     - name: 动态
-      URL: /dynamic
       pageRef: /dynamic
       weight: 2
     - name: 笔记
-      URL: /note
       pageRef: /note
       weight: 3
 

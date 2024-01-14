@@ -6,8 +6,6 @@ url: ''
 <img id="_index" loading="lazy" src="" data-zoomable/>
 
 <h1>关于本站</h1>
-<h4><a href="../en">English</a></h4>
-
 
 <div class="main-post-content">
     <div class="main-post-content-txt">
