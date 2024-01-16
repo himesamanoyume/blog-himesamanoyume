@@ -37,7 +37,10 @@ keywords:
         <td colspan="2">Day15</td>
     </tr>
     <tr>
-        <td colspan="10" rowspan="2" style="text-align: center;">春节</td>
+        <td colspan="10" style="text-align: center;">春节</td>
+    </tr>
+    <tr>
+        <td colspan="10" style="text-align: center;">春节</td>
     </tr>
     <tr>
         <td colspan="10" style="text-align: center;">星骸骑士</td>
