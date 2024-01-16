@@ -6,13 +6,18 @@ keywords:
   - '笔记'
 ---
 
+<!--more-->
+
 <table>
     <tr>
-        <td colspan="10">UE5</td>
+        <td colspan="10" style="text-align: center;">UE5</td>
     </tr>
     <tr>
-        <td><a href="./#Day1">Day1</a></td>
-        <td><a href="./#Day2">Day2</a></td>
+        <td colspan="10" style="text-align: center;">基础部分</td>
+    </tr>
+    <tr>
+        <td><a href="./#Day1">Day1<br>基础操作</a></td>
+        <td><a href="./#Day2">Day2<br>资产</a></td>
         <td>Day3</td>
         <td>Day4</td>
         <td>Day5</td>
@@ -21,6 +26,9 @@ keywords:
         <td>Day8</td>
         <td>Day9</td>
         <td>Day10</td>
+    </tr>
+    <tr>
+        <td colspan="10" style="text-align: center;">林深不知处</td>
     </tr>
     <tr>
         <td>Day11</td>
@@ -34,13 +42,12 @@ keywords:
         <td>Day19</td>
         <td>Day20</td>
     </tr>
+
 </table>
 
-<!--more-->
-
-### Day1
-
 <div id="Day1"></div>
+
+### Day1 基础操作
 
 ###### 基础设置
 
@@ -48,9 +55,9 @@ keywords:
 
 ###### 物体基本运动
 
-与Unity同理
+<span style="font-size: 12px;">UE怎么没有T快捷键的调整Object捏</span>
 
-*UE怎么没有T快捷键的调整Object捏*
+坐标轴,与Unity等3d软件同理
 
 f键:快速定位当前选中的Actor使摄像机对准
 
@@ -60,10 +67,14 @@ f键:快速定位当前选中的Actor使摄像机对准
 
 ![](day1-02.png)
 
-### Day2
-
 <div id="Day2"></div>
 
-###### 资产
+### Day2 资产
 
+记得改Bridge的下载路径
+
+![](day2-01.png)
+![](day2-02.png)
+
+吃饭喽
 
