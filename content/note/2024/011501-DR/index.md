@@ -1,5 +1,5 @@
 ---
-title: 'UE5-Part'
+title: 'DR'
 date: 2024-01-15T15:30:00+08:00
 description: ''
 keywords:
@@ -12,7 +12,7 @@ keywords:
 
 <table>
     <tr>
-        <td colspan="10" style="text-align: center;">林深不知处</td>
+        <td colspan="10" style="text-align: center;"><b>林深不知处</td>
     </tr>
     <tr>
         <td><a href="./#Day1">Day1<br>基础操作</a></td>
@@ -27,7 +27,7 @@ keywords:
         <td>Day10</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">Blender建模</td>
+        <td colspan="10" style="text-align: center;"><b>Blender建模</td>
     </tr>
     <tr>
         <td colspan="2">Day11</td>
@@ -43,7 +43,7 @@ keywords:
         <td colspan="10" style="text-align: center;">春节</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">星骸骑士</td>
+        <td colspan="10" style="text-align: center;"><b>星骸骑士</td>
     </tr>
     <tr>
         <td>Day16</td>
@@ -65,7 +65,7 @@ keywords:
         <td colspan="2">Day30</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">旷野之息</td>
+        <td colspan="10" style="text-align: center;"><b>旷野之息</td>
     </tr>
     <tr>
         <td>Day31</td>
@@ -87,7 +87,7 @@ keywords:
         <td colspan="2">Day45</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">Blender建模</td>
+        <td colspan="10" style="text-align: center;"><b>Blender建模</td>
     </tr>
     <tr>
         <td colspan="2">Day46</td>
@@ -96,7 +96,7 @@ keywords:
         <td colspan="4" style="text-align: center;">清明</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">利物浦大街37号</td>
+        <td colspan="10" style="text-align: center;"><b>利物浦大街37号</td>
     </tr>
     <tr>
         <td>Day49</td>
@@ -111,7 +111,7 @@ keywords:
         <td>Day58</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">Blender建模</td>
+        <td colspan="10" style="text-align: center;"><b>Blender建模</td>
     </tr>
     <tr>
         <td colspan="2">Day59</td>
@@ -121,7 +121,7 @@ keywords:
         <td colspan="2">Day63</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;">地平线GT</td>
+        <td colspan="10" style="text-align: center;"><b>地平线GT</td>
     </tr>
     <tr>
         <td colspan="2">Day64</td>
@@ -171,3 +171,20 @@ f键:快速定位当前选中的Actor使摄像机对准
 
 吃饭喽
 
+---
+
+![](day2-03.png)
+
+![](day2-04.png)
+
+###### PureRef操作
+
+![](day2-05.png)
+
+![](day2-06.png)
+
+去色 观察黑白信息 `ctrl`+`alt`+`g`
+
+窗口最大化 `ctrl`+`f` 最小化 `ctrl`+`m`
+
+置顶 `ctrl`+`shift`+`a`
