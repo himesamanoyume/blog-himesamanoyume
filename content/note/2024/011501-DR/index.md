@@ -12,12 +12,12 @@ keywords:
 
 <table>
     <tr>
-        <td colspan="10" style="text-align: center;"><b>林深不知处</td>
+        <td colspan="10" style="text-align: center;"><a href="./#林深不知处"><b>林深不知处</a></td>
     </tr>
     <tr>
         <td><a href="./#Day1">Day1<br>基础操作</a></td>
         <td><a href="./#Day2">Day2<br>资产</a></td>
-        <td>Day3</td>
+        <td><a href="./#Day3">Day3<br>白盒/Lumen</a></td>
         <td>Day4</td>
         <td>Day5</td>
         <td>Day6</td>
@@ -27,7 +27,7 @@ keywords:
         <td>Day10</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;"><b>Blender建模</td>
+        <td colspan="10" style="text-align: center;"><b>Blender建模1</td>
     </tr>
     <tr>
         <td colspan="2">Day11</td>
@@ -87,7 +87,7 @@ keywords:
         <td colspan="2">Day45</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;"><b>Blender建模</td>
+        <td colspan="10" style="text-align: center;"><b>Blender建模2</td>
     </tr>
     <tr>
         <td colspan="2">Day46</td>
@@ -111,7 +111,7 @@ keywords:
         <td>Day58</td>
     </tr>
     <tr>
-        <td colspan="10" style="text-align: center;"><b>Blender建模</td>
+        <td colspan="10" style="text-align: center;"><b>Blender建模3</td>
     </tr>
     <tr>
         <td colspan="2">Day59</td>
@@ -137,6 +137,12 @@ keywords:
     </tr>
 
 </table>
+
+<div id="林深不知处"></div>
+
+<details>
+
+<summary>林深不知处</summary>
 
 <div id="Day1"></div>
 
@@ -188,3 +194,19 @@ f键:快速定位当前选中的Actor使摄像机对准
 窗口最大化 `ctrl`+`f` 最小化 `ctrl`+`m`
 
 置顶 `ctrl`+`shift`+`a`
+
+添加文字 `ctrl`+`n`
+
+<div id="Day3"></div>
+
+### Day3 白盒/Lumen
+
+</details>
+
+<details>
+
+<summary>Blender建模1</summary>
+
+占位
+
+</details>
