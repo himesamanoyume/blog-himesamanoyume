@@ -30,15 +30,15 @@ keywords:
 
 - `必须下载`:[[Onedrive] 游戏本体 0.14.0.0.28375 [23.9GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EVQxM56DgwxGl_VOcNK2ezkB6zUqfM2bKB_vYTz2PY2x2A?e=JDQxJy)
 - `必须下载`:[[Onedrive] 降级补丁 0.14.0.0.28375 → 0.13.9.1.27622 [2.45GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ET3ZSu2wMDtPsXFJ-qMjvd4B_9PlwjcFsLkIcBam8OfK-w?e=HvhaLV)
-- **单补丁按需下载**:[[Onedrive] 免正版验证的联机补丁(若安装mod则不需要单独下载,补丁已整合在ExtendMod中) [500KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW) (v2024.1.18)
-- **按需下载**:[[Onedrive] ExtendMod [45.4MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
+- **单补丁按需下载**:[[Onedrive] 免正版验证的联机补丁(若安装mod则不需要单独下载,补丁已整合在ExtendMod中) [512KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW) (v2024.1.18)
+- **按需下载**:[[Onedrive] ExtendMod [113MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
 - 按需下载:[.NET Runtime 专用启动器必需的运行环境](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer)
 
 如果<ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby>能正常启动的话也可以不安装运行环境,但可能会出现界面的图标错乱
 
 - `必须下载`:[[Onedrive] <ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby> [31.2MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESnFJVBZ1b1PsglaDqnDY4wBQaxcYEI3mXkr4cHbwUxK8w?e=8UfF4G)
 - 按需下载:[Radmin LAN 局域网联机软件](https://download.radmin-lan.cn/download/files/Radmin_LAN_1.4.4642.1.exe) / 带公网的服务器
-- 只需服主下载:[[Onedrive] SITCoop 服务端Mod 1.9.8767.26420 [15.1MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESX3_3_-CyZLn99GGK0dvvoBD8WpEhaweVA_-1R3Gj_2dQ?e=SthiHd)
+- 只需服主下载:[[Onedrive] SITCoop 服务端Mod 1.9.8767.26420 [16.2MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESX3_3_-CyZLn99GGK0dvvoBD8WpEhaweVA_-1R3Gj_2dQ?e=SthiHd)
 - 只需服主下载:[服务端SPT-AKI 3.7.6 Release-26535](https://dev.sp-tarkov.com/attachments/d549e35d-998c-4986-8c78-64571a6e083c)
 
 ---
@@ -139,7 +139,7 @@ keywords:
 
 以下是整合包链接:
 
-- [[Onedrive] ExtendMod [45.4MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
+- [[Onedrive] ExtendMod [113MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
 
 整合包已内置了过正版验证的`StayInTarkov.dll`
 
@@ -169,7 +169,7 @@ keywords:
 - - 如果出生时距离过近可能会让PMC直接突脸玩家,且如果靠近空投区域也会去抢空投
 - `ConfigurationManager`:mod配置管理器(未安装SAIN时在游戏中F1打开,安装SAIN后为F12打开)
 - `BotDebug`:配合`ConfigurationManager`使用,用于检查AI mod的生效是否正常
-- `MinimapSender`:可在浏览器或手机上打开[http://localhost:8080/index.html](http://localhost:8080/index.html),即可查看实时地图
+- `MinimapSender`:可在浏览器或手机上打开[http://localhost:8080/index.html](http://localhost:8080/index.html),即可查看实时地图,雷达外挂同原理的低配版
 - `LiveFleaPrices`:可获取实时跳蚤市场价格,但需要服务器网络环境处于能够翻墙的状态
 
 > 整合包的内容必须适配本文提到的服务端版本和游戏版本,若全程都已按照本文教程安装,那么整合包应该可以直接使用
