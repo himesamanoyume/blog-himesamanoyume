@@ -10,17 +10,28 @@ keywords:
 
 <!--more-->
 
-现在处于**试验阶段**
+## 目录
 
-### 链接
+- [下载链接](#下载链接)
+- [步骤教程](#步骤教程)
+- [进阶](#进阶)
+- [Q&A](#qa)
+- [建议设置](#建议设置)
+- [服务端调整](#服务端调整)
+- [服务器已知问题](#服务器已知问题)
 
-密码h***
+---
+
+### 下载链接
+
+密码h***,来问我
 
 推荐用IDM插件搭配IDM下载Onedrive相关文件
 
 - `必须下载`:[[Onedrive] 游戏本体 0.14.0.0.28375 [23.9GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EVQxM56DgwxGl_VOcNK2ezkB6zUqfM2bKB_vYTz2PY2x2A?e=JDQxJy)
 - `必须下载`:[[Onedrive] 降级补丁 0.14.0.0.28375 → 0.13.9.1.27622 [2.45GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ET3ZSu2wMDtPsXFJ-qMjvd4B_9PlwjcFsLkIcBam8OfK-w?e=HvhaLV)
-- **按需下载(单补丁)**:[[Onedrive] 免正版验证的联机补丁(若安装mod则不需要单独下载,补丁已整合在ExtendMod中) [500KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW) (v2024.1.18)
+- **单补丁按需下载**:[[Onedrive] 免正版验证的联机补丁(若安装mod则不需要单独下载,补丁已整合在ExtendMod中) [500KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW) (v2024.1.18)
+- **按需下载**:[[Onedrive] ExtendMod [45.4MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
 - 按需下载:[.NET Runtime 专用启动器必需的运行环境](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer)
 
 如果<ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby>能正常启动的话也可以不安装运行环境,但可能会出现界面的图标错乱
@@ -30,12 +41,13 @@ keywords:
 - 只需服主下载:[[Onedrive] SITCoop 服务端Mod 1.9.8767.26420 [15.1MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESX3_3_-CyZLn99GGK0dvvoBD8WpEhaweVA_-1R3Gj_2dQ?e=SthiHd)
 - 只需服主下载:[服务端SPT-AKI 3.7.6 Release-26535](https://dev.sp-tarkov.com/attachments/d549e35d-998c-4986-8c78-64571a6e083c)
 
+---
 
-## 步骤
+## 步骤教程
 
 - 创建一个目录(所有目录名不能为中文),名称自定,用`{Root}`来指代
 
-### 玩家步骤
+#### 玩家步骤
 
 - 将**游戏本体**解压到`{Root}`下,该目录用`{Game}`指代
 - 将**降级补丁**解压并将里面的文件粘贴到`{Game}`下,运行`patcher.exe`,会自动将游戏降级,得到0.13.9.1.27622版本的纯净版塔科夫,之后的所有步骤都建立在纯净版的基础上
@@ -49,24 +61,24 @@ keywords:
 - - 选择`StayInTarkov.Client-1.9.8766.40295 - Tarkov Version: 0.13.9.1.27622`,安装
 - *用免正版验证的联机补丁替换掉{Game}/BepInEx/plugins下的`StayInTarkov.dll`*(若安装mod,可跳过这一步)
 
-#### 如果是局域网联机
+##### 如果是局域网联机
 
 - 下载安装**Radmin LAN 局域网联机软件**
 - - 网络→加入网络→私人网络
 - - 填写私人网络对应的名称和密码(由创建私人网络的房主提供)
 
-#### 如果是公网服务器
+##### 如果是公网服务器
 
 - 无需特殊操作, 只需问服主提供的IP地址
 
-#### 连接
+##### 连接登录
 
 - 使用`SIT Manager`填写对应的`Address`为`http://{Radmin中服主的IP/服务器公网IP}:6969`
 - 若服主已开服,`SIT Manager` Connect进入游戏
 
 ---
 
-### 服主开服步骤
+#### 服主开服步骤
 
 <details>
 
@@ -81,17 +93,17 @@ keywords:
 - - 看到**玩得开心**或者**happy playing**即可关闭
 - 防火墙打开`6969`和`6970`端口
 
-#### 如果是局域网联机
+##### 如果是局域网联机
 
 - 下载安装**Radmin LAN 局域网联机软件**
 - - 网络→创建私人网络
 - - 填写名称和密码,并提供给想要加入的玩家
 
-#### 公网服务器
+##### 公网服务器
 
 - 无需特殊操作, 记录服务器的IP地址或域名
 
-#### 修改配置文件
+##### 修改配置文件
 
 - 打开`{Server}/Aki_Data/Server/configs/http.json`,进行修改:
 ```json
@@ -119,7 +131,7 @@ keywords:
 
 ---
 
-## 进阶
+### 进阶
 
 以上是基础流程,下面为进阶版,将为服务端和客户端新增改变AI逻辑的mod
 
@@ -162,6 +174,12 @@ keywords:
 
 > 整合包的内容必须适配本文提到的服务端版本和游戏版本,若全程都已按照本文教程安装,那么整合包应该可以直接使用
 
+![](06.png)
+
+![](01.png)
+
+![](02.png)
+
 ---
 
 ### Q&A
@@ -192,17 +210,23 @@ keywords:
 
 这是AI性格的修改,GigaChad会让AI更具有攻击性,更爱嘲讽敌人,能减少AI爱当蹲比少说话的情况,推荐所有当房主的玩家修改
 
+[![](03.png)](03.png)
+
 ###### QuestingBots MOD
 
 游戏中`F12`打开`ConfigurationManager`→`DanW-QuestingBots`→`Distance from PMCs和Distance from You`数值调高
 
 如果玩家距离AI超过这个数值,AI就不会继续运作了,所以推荐调高
 
+![](04.png)
+
 ###### LootingBots MOD
 
 游戏中`F12`打开`ConfigurationManager`→`LootingBots`→`Enable corpse looting`/`Enable container looting`/`Enable loose item looting`中的选项全部打开
 
-这影响到AI是否会搜刮对应的战利品
+这影响到对应的AI是否会搜刮对应的战利品
+
+![](05.png)
 
 ---
 
@@ -217,7 +241,6 @@ keywords:
 - 任务奖励/回保物品在邮件中存储的时间翻倍
 - 投保物品95%的概率能够回保
 - 投保物品费用为物品价值的12%
-
 
 ### 服务器已知问题
 
@@ -239,7 +262,8 @@ keywords:
 
 日志中没有任何报错,每次隔一段时间打开后台看看服务器就可能发现两个程序都没了
 
-至今不知道原因,除非我24小时盯着屏幕看到发生时的那一幕,十分的神必
+至今不知道原因,除非我24小时盯着屏幕看到发生时的那一幕,十分的神秘<img loading='lazy' src='./Hoshino.png' style='width:90px;display:inline'>
+
 
 ##### 世界线的收束
 
