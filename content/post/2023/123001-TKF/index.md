@@ -234,6 +234,8 @@ keywords:
 
 ### 建议设置
 
+每个人正常开启游戏后都先应该调整这些设置,以保证游戏体验一致
+
 ###### SAIN MOD
 
 游戏中`F6`打开`SAIN GUI Editor`→`Global Settings`→`Global Personailty Settings`→`AllGigaChads改为On`→`Save and Export`保存
@@ -244,15 +246,15 @@ keywords:
 
 ###### QuestingBots MOD
 
-游戏中`F12`打开`ConfigurationManager`→`DanW-QuestingBots`→`Distance from PMCs和Distance from You`数值调高
+游戏中`F1`(也可能是`F12`)打开`ConfigurationManager`→`DanW-QuestingBots`→`Distance from PMCs和Distance from You`数值调高
 
-如果玩家距离AI超过这个数值,AI就不会继续运作了,所以推荐调高
+如果玩家距离AI超过这个数值,AI就不会继续运作了,所以推荐调高,当然越高也越耗费你电脑的性能
 
 ![](04.png)
 
 ###### LootingBots MOD
 
-游戏中`F12`打开`ConfigurationManager`→`LootingBots`→`Enable corpse looting`/`Enable container looting`/`Enable loose item looting`中的选项全部打开
+游戏中`F1`(也可能是`F12`)打开`ConfigurationManager`→`LootingBots`→`Enable corpse looting`/`Enable container looting`/`Enable loose item looting`中的选项点击`All`全部打开
 
 这影响到对应的AI是否会搜刮对应的战利品
 
@@ -260,7 +262,7 @@ keywords:
 
 ---
 
-### 服务端调整
+### 我个人私服的一些调整
 
 - 跳蚤市场1级开放
 - 跳蚤市场交易税为1%
@@ -272,7 +274,7 @@ keywords:
 - 投保物品95%的概率能够回保
 - 投保物品费用为物品价值的12%
 
-### 服务器已知问题
+### 该私服已知问题
 
 ##### 偶发性的保存失败
 
