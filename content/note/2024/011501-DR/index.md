@@ -18,7 +18,7 @@ keywords:
         <td><a href="./#Day1">Day1<br>基础操作</a></td>
         <td><a href="./#Day2">Day2<br>资产</a></td>
         <td><a href="./#Day3">Day3<br>白盒/Lumen</a></td>
-        <td>Day4</td>
+        <td><a href="./#Day4">Day4<br>白盒细化</a></td>
         <td>Day5</td>
         <td>Day6</td>
         <td>Day7</td>
@@ -200,6 +200,16 @@ f键:快速定位当前选中的Actor使摄像机对准
 <div id="Day3"></div>
 
 ### Day3 白盒/Lumen
+
+![](day3-01.png)
+
+![](day3-02.png)
+
+### Day4 白盒细化
+
+无
+
+### Day5 
 
 </details>
 
