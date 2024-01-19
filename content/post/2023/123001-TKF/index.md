@@ -180,6 +180,32 @@ keywords:
 
 ![](02.png)
 
+#####  最终目录结构自查
+
+以下出现的内容必须在游戏目录中存在(v2024.1.18)
+
+```
+{Game}
+└─BepInEx
+   └─plugins
+       ├─custom
+       │  └─Solarint
+       |     └─ ...
+       ├─navmesh
+       |  └─ ...
+       ├─SAIN
+       |  └─ ...
+       ├─TechHappy-MinimapSender
+       |  └─ ...
+       ├─ConfigurationManager.dll
+       ├─DrakiaXYZ-BotDebug.dll
+       ├─SAIN.dll
+       ├─skwizzy.LootingBots.dll
+       ├─SPTQuestingBots.dll
+       ├─StayInTarkov.dll
+       └─TechHappy.MinimapSender.dll
+```
+
 ---
 
 ### Q&A

@@ -19,7 +19,7 @@ keywords:
         <td><a href="./#Day2">Day2<br>资产</a></td>
         <td><a href="./#Day3">Day3<br>白盒/Lumen</a></td>
         <td><a href="./#Day4">Day4<br>白盒细化</a></td>
-        <td>Day5</td>
+        <td><a href="./#Day5">Day5<br>材质球</a></td>
         <td>Day6</td>
         <td>Day7</td>
         <td>Day8</td>
@@ -146,7 +146,7 @@ keywords:
 
 <div id="Day1"></div>
 
-### Day1 基础操作
+### Day1基础操作
 
 ###### 基础设置
 
@@ -205,11 +205,15 @@ f键:快速定位当前选中的Actor使摄像机对准
 
 ![](day3-02.png)
 
+<div id="Day4"></div>
+
 ### Day4 白盒细化
 
-无
+![](day4-01.png)
 
-### Day5 
+<div id="Day5"></div>
+
+### Day5 材质球
 
 </details>
 
