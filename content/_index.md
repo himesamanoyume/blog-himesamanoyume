@@ -14,7 +14,7 @@ url: ''
             技术栈: Unity3D/C#/python/html/js/css
         </p>
         <p>
-            TODO: Unreal/C++学习中
+            TODO: Unreal5/C++/Blender学习中
         </p>
         <p>
             <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者。
