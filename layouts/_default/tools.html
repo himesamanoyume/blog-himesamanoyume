@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head" . }}
+</head>
+<body id="body" data-theme="auto" data-section="tools">
+    <header class="header">
+        {{ partial "header" . }}
+    </header>
+    
+    <main class="main" data-url="tools" data-keyword="">
+        <div class="home-container">
+            <div class="post-container">
+                {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}
+                {{ range $paginator.Pages }}
+                    <div class="post">
+                        <div class="post-Img-container">
+                            
+                        </div>
+                        <div class="post-txt-container">
+                            <a class="post-txt-container-title" href="{{.Permalink}}">
+                                <h4>
+                                    {{.Title}}
+                                </h4>
+                            </a>
+                            {{ partial "summary" . }}
+                            <div class="post-txt-container-datetime">
+                                {{printf "%s" (.Date.Format "2006-01-02")}}
+                                <span class="important">{{.Keywords}}</span>
+                                {{ .Description }}
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+                {{ .Scratch.Set "paginator" $paginator }}
+                {{ partial "page" . }}
+            </div>
+            <aside class="info-container">
+                <div id="info-container-inner" class="info-container-inner">
+                    {{ partial "infoContainer" . }}
+                </div>
+            </aside>
+        </div>
+    </main>
+<footer class="footer">
+    {{ partial "footer" . }}
+</footer>
+</body>
+</html>

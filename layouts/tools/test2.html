@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head" . }}
+</head>
+<body id="body" data-theme="auto" data-section="test1">
+    <header class="header">
+        {{ partial "header" . }}
+    </header>
+    
+    <main class="main" data-url="test1" data-keyword="">
+        <div class="home-container">
+            <div class="post-container">
+                    <div class="post">
+                        <div class="post-Img-container">
+                            
+                        </div>
+                        <div class="post-txt-container">
+                            <a class="post-txt-container-title">
+                                <h4>
+                                    {{.Title}}
+                                </h4>
+                            </a>
+                            {{ partial "test2/test2test" . }}
+                            
+                        </div>
+                    </div>
+            </div>
+            <aside class="info-container">
+                <div id="info-container-inner" class="info-container-inner">
+                    {{ partial "infoContainer" . }}
+                </div>
+            </aside>
+        </div>
+    </main>
+<footer class="footer">
+    {{ partial "footer" . }}
+</footer>
+</body>
+</html>
