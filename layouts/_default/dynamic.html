@@ -15,7 +15,7 @@
                 {{ range $paginator.Pages }}
                 <div class="post" style="min-height: 50px;">
                     <div class="post-Img-container" style="max-height:500px;justify-content: center;display: inline-flex;flex-wrap: wrap;-ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;flex: none;">
-                        {{ $banner := .Page.Resources.Match "*.webp"}}
+                        {{ $banner := .Page.Resources.ByType "image"}}
                         {{ if eq (len $banner) 1 }}
                             {{ $banner := index $banner 0 }}
                             <div class="fiximg" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
