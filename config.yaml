@@ -17,6 +17,7 @@ menu:
     #   pageRef: /tools
     #   weight: 4
 
+hidden: true
 markup:
   goldmark:
     renderer:

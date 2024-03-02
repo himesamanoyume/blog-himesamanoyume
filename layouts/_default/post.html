@@ -13,32 +13,34 @@
             <div class="post-container">
                 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}
                 {{ range $paginator.Pages }}
-                    <div class="post">
-                        <div class="post-Img-container">
-                            {{ $banner := .Page.Resources.Match "*index.webp"}}
-                            {{ if ge (len $banner) 1 }}
-                            {{ $banner := index $banner 0 }}
-                            <div class="fiximg" style="width: 100%;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
-                                <a href="{{.Permalink}}" class="fiximg__container" style="padding-bottom: 30%;height: 0;display: block;margin: 0">
-                                    <img loading="lazy" src="{{ $banner.Permalink }}" data-zommable>
+                    {{ if not .Params.hidden }}
+                        <div class="post">
+                            <div class="post-Img-container">
+                                {{ $banner := .Page.Resources.Match "*index.webp"}}
+                                {{ if ge (len $banner) 1 }}
+                                {{ $banner := index $banner 0 }}
+                                <div class="fiximg" style="width: 100%;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+                                    <a href="{{.Permalink}}" class="fiximg__container" style="padding-bottom: 30%;height: 0;display: block;margin: 0">
+                                        <img loading="lazy" src="{{ $banner.Permalink }}" data-zommable>
+                                    </a>
+                                </div>
+                                {{ end }}
+                            </div>
+                            <div class="post-txt-container">
+                                <a class="post-txt-container-title" href="{{.Permalink}}">
+                                    <h4>
+                                        {{.Title}}
+                                    </h4>
                                 </a>
-                            </div>
-                            {{ end }}
-                        </div>
-                        <div class="post-txt-container">
-                            <a class="post-txt-container-title" href="{{.Permalink}}">
-                                <h4>
-                                    {{.Title}}
-                                </h4>
-                            </a>
-                            {{ partial "summary" . }}
-                            <div class="post-txt-container-datetime">
-                                {{printf "%s" (.Date.Format "2006-01-02")}}
-                                <span class="important">{{.Keywords}}</span>
-                                {{ .Description }}
+                                {{ partial "summary" . }}
+                                <div class="post-txt-container-datetime">
+                                    {{printf "%s" (.Date.Format "2006-01-02")}}
+                                    <span class="important">{{.Keywords}}</span>
+                                    {{ .Description }}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    {{- end }}
                 {{ end }}
                 {{ .Scratch.Set "paginator" $paginator }}
                 {{ partial "page" . }}
