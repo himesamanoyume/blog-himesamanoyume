@@ -28,8 +28,8 @@ url: ''
         </p>
         <h4><span class="important">头像画师</span></h4>
         <p>
-            <a href="https://www.pixiv.net/users/126858" target="_blank">
-                @ゆさの
+            <a href="https://www.pixiv.net/users/15681279" target="_blank">
+                @アサハル
             </a>
         </p>
         <h4><span class="important">喜欢的插画画师</span></h4>
