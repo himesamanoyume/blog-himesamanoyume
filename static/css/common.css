@@ -34,6 +34,10 @@ body>header>.nav-out>.nav>.blogName {
     /* color: transparent */
 }
 
+canvas{
+    width: 100%;
+}
+
 @media screen and (max-width:1005px) {
     .nav {
         flex-direction: column;

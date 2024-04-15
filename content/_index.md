@@ -3,7 +3,7 @@ title: 'HIMEBLOG'
 url: ''
 ---
 
-<img id="_index" loading="lazy" src="" data-zoomable/>
+<span id="pixi"></span>
 
 <h1>关于本站</h1>
 
