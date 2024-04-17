@@ -3,7 +3,10 @@ title: 'HIMEBLOG'
 url: ''
 ---
 
-<span id="pixi"></span>
+<div class="fiximg" style="width: 100%;;border-bottom-left-radius: 0;border-bottom-right-radius: 0;display: block">
+    <div class="fiximg__container" id="pixi" style="padding-bottom: 57%;;height: 0;display: block;margin: 0">
+    </div>
+</div>
 
 <h1>关于本站</h1>
 
