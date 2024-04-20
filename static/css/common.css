@@ -31,6 +31,7 @@ body {
 body>header>.nav-out>.nav>.blogName {
     padding: 0;
     font-size: 25px;
+    font-family: 'Blueaka';
     /* color: transparent */
 }
 
@@ -1622,3 +1623,15 @@ input:checked::after {
     border-right: none;
     transform: rotate(-45deg);
 }
+
+@font-face {
+    font-family: 'Blueaka_Bold';
+    src: url('../font/Blueaka_Bold.woff2') format('woff2');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Blueaka';
+    src: url('../font/Blueaka.woff2') format('woff2');
+    font-display: swap;
+  }
