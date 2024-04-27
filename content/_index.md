@@ -14,10 +14,7 @@ url: ''
     <div class="main-post-content-txt">
         <h4><span class="important">近期</h4>
         <p>
-            技术栈: Unity3D/C#/python/html/js/css
-        </p>
-        <p>
-            TODO: Unreal5/C++/Blender学习中
+            Unity3D/C#/python/html/js/css/Unreal5/Blender
         </p>
         <p>
             <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者。
