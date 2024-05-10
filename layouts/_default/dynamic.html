@@ -13,7 +13,11 @@
             <div class="post-container">
                 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}
                 {{ range $paginator.Pages }}
-                <div class="post" style="min-height: 50px;">
+                {{ if .Params.isred }}
+                <div class="post" style="min-height: 50px;box-shadow: 3px 0 0 0 rgb(216, 89, 89) inset;" >
+                {{ else }}
+                <div class="post" style="min-height: 50px;" >
+                {{ end }}
                     <div class="post-Img-container" style="max-height:500px;justify-content: center;display: inline-flex;flex-wrap: wrap;-ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;flex: none;">
                         {{ $banner := .Page.Resources.ByType "image"}}
                         {{ if eq (len $banner) 1 }}
