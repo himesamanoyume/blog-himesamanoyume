@@ -8,6 +8,7 @@ url: ''
     </div>
 </div>
 
+<div style="height:25px;background-color:#bf5f00;width:100%">由于本站位于境外,强烈建议科学上网,以获取最佳体验</div>
 <h1>关于本站</h1>
 
 <div class="main-post-content">
