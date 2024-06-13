@@ -196,7 +196,7 @@ canvas{
         --code-block-bg: #272822;
         --selection-text-bg: #505074;
         --zh-font-family: "Microsoft YaHei";
-        --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+        --code-font-family: Consolas, "Courier New", var(--zh-font-family);
     }
 
     @media(prefers-color-scheme:light) {
@@ -217,7 +217,7 @@ canvas{
             --selection-text-bg: #B1D8DD;
             --code-block-bg: #272822;
             --zh-font-family: "Microsoft YaHei";
-            --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+            --code-font-family: Consolas, "Courier New", var(--zh-font-family);
         }
     }
 }
@@ -239,7 +239,7 @@ body[data-theme=dark] {
     --code-block-bg: #272822;
     --selection-text-bg: #505074;
     --zh-font-family: "Microsoft YaHei";
-    --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+    --code-font-family: Consolas, "Courier New", var(--zh-font-family);
 }
 
 body[data-theme=light] {
@@ -259,7 +259,7 @@ body[data-theme=light] {
     --selection-text-bg: #B1D8DD;
     --code-block-bg: #272822;
     --zh-font-family: "Microsoft YaHei";
-    --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+    --code-font-family: Consolas, "Courier New", var(--zh-font-family);
 }
 
 
@@ -1619,6 +1619,14 @@ input:checked::after {
     border-top: none;
     border-right: none;
     transform: rotate(-45deg);
+}
+
+.warning-internet{
+    min-height:25px;
+    background-color:var(--post-important-bg);
+    width:100%;
+    line-height:25px;
+    color: var(--text-color);
 }
 
 @font-face {
