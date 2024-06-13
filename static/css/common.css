@@ -181,8 +181,6 @@ canvas{
 @media(prefers-color-scheme:dark) {
     body[data-theme=auto] {
         --body-bg: #3A3A3A;
-        /* --footer-bg: rgba(58, 58, 58, 0.74); */
-        --footer-bg: #3A3A3A;
         --post-bg: #2B2B2B;
         --header-bg: #262626;
         --post-shadow-color: #000;
@@ -200,29 +198,70 @@ canvas{
         --zh-font-family: "Microsoft YaHei";
         --code-font-family: Consolas, "Courier New", var(--zh-font-family)
     }
+
+    @media(prefers-color-scheme:light) {
+        body[data-theme=auto] {
+            --body-bg: rgb(235, 235, 235);
+            --post-bg: rgba(255, 250, 250);
+            --header-bg: rgba(194, 194, 194);
+            --post-shadow-color: #666699;
+            --text-color: #666699;
+            --text-blogname-color: #666699;
+            --page-button-color: #474769;
+            --page-current-color: #b1b6ce;
+            --tianyi-color: #008ac5;
+            --post-code-bg: #333333;
+            --post-code-text-color: snow;
+            --post-reference-bg: #595959;
+            --post-important-bg: #C2C2C2;
+            --selection-text-bg: #B1D8DD;
+            --code-block-bg: #272822;
+            --zh-font-family: "Microsoft YaHei";
+            --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+        }
+    }
 }
 
 body[data-theme=dark] {
     --body-bg: #3A3A3A;
-        /* --footer-bg: rgba(58, 58, 58, 0.74); */
-        --footer-bg: #3A3A3A;
-        --post-bg: #2B2B2B;
-        --header-bg: #262626;
-        --post-shadow-color: #000;
-        --text-color: #d9d9d9;
-        --text-blogname-color: #ffffff;
-        --page-button-color: #fff;
-        --page-current-color: #717585;
-        --tianyi-color: #66ccff;
-        --post-code-bg: #333333;
-        --post-code-text-color: snow;
-        --post-reference-bg: #595959;
-        --post-important-bg: #40405f;
-        --code-block-bg: #272822;
-        --selection-text-bg: #505074;
-        --zh-font-family: "Microsoft YaHei";
-        --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+    --post-bg: #2B2B2B;
+    --header-bg: #262626;
+    --post-shadow-color: #000;
+    --text-color: #d9d9d9;
+    --text-blogname-color: #ffffff;
+    --page-button-color: #fff;
+    --page-current-color: #717585;
+    --tianyi-color: #66ccff;
+    --post-code-bg: #333333;
+    --post-code-text-color: snow;
+    --post-reference-bg: #595959;
+    --post-important-bg: #40405f;
+    --code-block-bg: #272822;
+    --selection-text-bg: #505074;
+    --zh-font-family: "Microsoft YaHei";
+    --code-font-family: Consolas, "Courier New", var(--zh-font-family)
 }
+
+body[data-theme=light] {
+    --body-bg: #EBEBEB;
+    --post-bg: #FFFAFA;
+    --header-bg: #C2C2C2;
+    --post-shadow-color: #666699;
+    --text-color: #666699;
+    --text-blogname-color: #666699;
+    --page-button-color: #474769;
+    --page-current-color: #b1b6ce;
+    --tianyi-color: #008ac5;
+    --post-code-bg: #333333;
+    --post-code-text-color: snow;
+    --post-reference-bg: #595959;
+    --post-important-bg: #C2C2C2;
+    --selection-text-bg: #B1D8DD;
+    --code-block-bg: #272822;
+    --zh-font-family: "Microsoft YaHei";
+    --code-font-family: Consolas, "Courier New", var(--zh-font-family)
+}
+
 
 .main {
     display: block;
