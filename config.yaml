@@ -13,9 +13,6 @@ menu:
     - name: 笔记
       pageRef: /note
       weight: 3
-    # - name: 工具
-    #   pageRef: /tools
-    #   weight: 4
 
 hidden: true
 markup:

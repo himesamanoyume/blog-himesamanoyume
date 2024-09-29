@@ -1,4 +1,8 @@
 # blog-himesamanoyume
+
+## How To Start
+
+hugo server -D
  
 # TODO
 
