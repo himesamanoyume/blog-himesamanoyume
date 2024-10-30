@@ -1,13 +1,15 @@
 ---
 title: 'TKF私服'
 date: 2023-12-30T14:00:00+08:00
-description: '用于内部阅读'
+description: ''
 # hidden: true
 keywords:
   - '文章'
 ---
 
-> 你最好是给我全文仔细的看一遍
+<blockquote style="background-color:#5f4040;box-shadow:3px 0 0 0 #d85959 inset;margin:10px 0 0 0;">
+  本文内容已失效
+</blockquote>
 
 <!--more-->
 
@@ -29,18 +31,18 @@ keywords:
 
 推荐用IDM插件搭配IDM下载Onedrive相关文件
 
-- `必须下载`:[[Onedrive] 游戏本体 0.14.0.0.28375 [23.9GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EVQxM56DgwxGl_VOcNK2ezkB6zUqfM2bKB_vYTz2PY2x2A?e=JDQxJy)
-- `必须下载`:[[Onedrive] 降级补丁 0.14.0.0.28375 → 0.13.9.1.27622 [2.45GB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ET3ZSu2wMDtPsXFJ-qMjvd4B_9PlwjcFsLkIcBam8OfK-w?e=HvhaLV)
-- **单补丁按需下载**:[[Onedrive] 免正版验证的联机补丁(若安装mod则不需要单独下载,补丁已整合在ExtendMod中) [512KB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EWKlVF3nT1xMiCgTBVosdNcBfqH5EhwdYsM-4ZJxJwE7vA?e=kegEbW) (v2024.1.18)
-- **按需下载**:[[Onedrive] ExtendMod [113MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
+- `必须下载`:~~[Onedrive] 游戏本体 0.14.0.0.28375 [23.9GB]~~
+- `必须下载`:~~[Onedrive] 降级补丁 0.14.0.0.28375 → 0.13.9.1.27622 [2.45GB]~~
+- **单补丁按需下载**:~~[Onedrive] 免正版验证的联机补丁(若安装mod则不需要单独下载,补丁已整合在ExtendMod中) [512KB]~~
+- **按需下载**:~~[Onedrive] ExtendMod [113MB]~~
 - 按需下载:[.NET Runtime 专用启动器必需的运行环境](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer)
 
 如果<ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby>能正常启动的话也可以不安装运行环境,但可能会出现界面的图标错乱
 
-- `必须下载`:[[Onedrive] <ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby> [31.2MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESnFJVBZ1b1PsglaDqnDY4wBQaxcYEI3mXkr4cHbwUxK8w?e=8UfF4G)
+- `必须下载`:~~[Onedrive] <ruby>专用启动器<rt class="ttt" data-rt="SIT Manager.exe"></rt></ruby> [31.2MB]~~
 - 按需下载:[Radmin LAN 局域网联机软件](https://download.radmin-lan.cn/download/files/Radmin_LAN_1.4.4642.1.exe) / 带公网的服务器
-- 只需服主下载:[[Onedrive] SITCoop 服务端Mod 1.9.8767.26420 [16.2MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/ESX3_3_-CyZLn99GGK0dvvoBD8WpEhaweVA_-1R3Gj_2dQ?e=SthiHd)
-- 只需服主下载:[服务端SPT-AKI 3.7.6 Release-26535](https://dev.sp-tarkov.com/attachments/d549e35d-998c-4986-8c78-64571a6e083c)
+- 只需服主下载:~~[Onedrive] SITCoop 服务端Mod 1.9.8767.26420 [16.2MB]~~
+- 只需服主下载:~~[服务端SPT-AKI 3.7.6 Release-26535]~~
 
 ---
 
@@ -144,7 +146,7 @@ keywords:
 
 以下是整合包链接:
 
-- [[Onedrive] ExtendMod [113MB]](https://ygt3z-my.sharepoint.com/:u:/g/personal/topidolproducer_ygt3z_onmicrosoft_com/EfksY34CqfVGhbso0b1LyK0Bm5upJJmQyAUQXL9I3dYhFg?e=RWa60e) (v2024.1.18)
+- ~~[Onedrive] ExtendMod [113MB]~~
 
 整合包已内置了过正版验证的`StayInTarkov.dll`
 
