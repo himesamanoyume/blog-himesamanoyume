@@ -59,7 +59,7 @@ docker run -d  \
 
 #### 安装Peerbanhelper
 
-```
+```docker
 docker run -d --name peerbanhelper -p 9898:9898 -v ${PWD}/:/app/data/ --net=host ghostchu/peerbanhelper:v7.1.4
 ```
 
@@ -81,7 +81,7 @@ docker volume create AutoBangumi_config
 docker volume create AutoBangumi_data
 ```
 
-```
+```docker
 docker run -d \
   --name=AutoBangumi \
   -v ${HOME}/AutoBangumi/config:/app/config \
@@ -99,7 +99,7 @@ docker run -d \
 
 安装完后到`/root/AutoBangumi/config/`中修改`config.json`
 
-```
+```json
 "downloader": {
      "type": "qbittorrent",
      "host": "{改为内网ip}:8080",
@@ -107,7 +107,7 @@ docker run -d \
      "password": "{填qb密码}",
      "path": "/downloads/Bangumi",
      "ssl": false
- },
+ }
 ```
 
 其中用户密码也可以到qb的设置选项里找到WebUI,勾选`对本地主机上的客户端跳过身份验证`
@@ -130,7 +130,7 @@ docker run -d --name embyserver --volume /path/to/programdata:/config  --volume 
 
 ##### 安装externalPlayer
 
-```
+```javascript
 // ==UserScript==
 // @name         embyLaunchPotplayer
 // @name:en      embyLaunchPotplayer
