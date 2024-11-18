@@ -6,11 +6,57 @@ keywords:
   - '文章'
 ---
 
-越当我在云服务器上捣鼓各种服务时,我就越是发觉,除了公网ip和企业级使用外,个人电脑完全爆杀服务器
+越当我在云服务器上捣鼓各种服务时,我就越是发觉,除了公网ip和企业级的某些使用用途外,个人电脑完全爆杀服务器
 
-> 后续:又舍弃WSL了捏。不知道为什么emby硬解总是弄不出来,于是转为使用Windows版本的qbee、peerbanhelper、jellyfin了,autobangumi使用docker desktop
+> 后续:又舍弃WSL了捏
 
 <!--more-->
+
+目前是因为不知道为什么emby硬解总是弄不出来,于是转为使用Windows版本的qbee、peerbanhelper、jellyfin了,autobangumi使用docker desktop
+
+qbee、peerbanhelper、jellyfin的步骤则比较简单,正常安装即可
+
+但是要到jellyfin的安装目录下输入两行代码设置代理,不然刮削太慢了
+
+```cmd
+$env:HTTP_PROXY="http://127.0.0.1:{代理端口}"
+$env:HTTPS_PROXY="http://127.0.0.1:{代理端口}"
+```
+
+然后重启jellyfin
+
+##### 重点是autobangumi
+
+由于ab的windows需要借助python运行,我不想每次手动启动
+
+于是转而使用windows docker desktop
+
+然后是需要对docker desktop做一些设置,如开启host,自启动
+
+并且创建容器时,不要用GUI创建
+
+通过cmd输入以下内容进行创建
+
+```docker
+docker run -d --name=AutoBangumi -v E:/{AutoBangumi的路径}/config:/app/config -v E:/{AutoBangumi的路径}/data:/app/data -p 7892:7892 -e TZ=Asia/Shanghai -e PUID=0-e PGID=0 -e UMASK=022 --net=host --dns=8.8.8.8 --restart unless-stopped ghcr.io/estrellaxd/auto_bangumi:latest
+```
+
+还有一点是ab的下载地址不能继续用`/downloads/Bangumi`,要改成Windows的绝对路径,否则ab对番剧进行改名时无法分类到不同的文件夹里
+
+然后剩下别的都跟原文一样
+
+#### 总结
+
+总的来说,抛弃WSL最大的问题有两个:
+
+- 我没开成硬解
+- 网络问题开代理太消耗梯子流量
+
+而Windows下就可控多了
+
+----
+
+> 以下为原内容
 
 先Windows中启用Hyper-v和WSL
 
