@@ -8,6 +8,8 @@ keywords:
 
 越当我在云服务器上捣鼓各种服务时,我就越是发觉,除了公网ip和企业级使用外,个人电脑完全爆杀服务器
 
+> 后续:又舍弃WSL了捏。不知道为什么emby硬解总是弄不出来,于是转为使用Windows版本的qbee、peerbanhelper、jellyfin了,autobangumi使用docker desktop
+
 <!--more-->
 
 先Windows中启用Hyper-v和WSL
@@ -112,13 +114,15 @@ docker run -d \
 
 其中用户密码也可以到qb的设置选项里找到WebUI,勾选`对本地主机上的客户端跳过身份验证`
 
-然后ab的代理设置里启用代理，地址和端口都要填上对应的
+然后可以到ab的代理设置里启用代理，地址和端口都要填上对应的
 
 地址`127.0.0.1`
 
 端口如v2ray就是`10809`,clash就是`7890`
 
 该网站对应地址为`{host ip}:7892`
+
+也可以不开启代理,然后蜜柑的rss订阅链接把`.me`换成`.tv`就是国内能够使用的了
 
 #### 安装emby
 
@@ -128,7 +132,7 @@ docker run -d --name embyserver --volume /path/to/programdata:/config  --volume 
 
 该网站对应地址为`{host ip}:8096`
 
-##### 安装externalPlayer
+##### 安装externalPlayer(适用emby)
 
 ```javascript
 // ==UserScript==
