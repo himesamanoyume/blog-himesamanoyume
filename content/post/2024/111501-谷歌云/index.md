@@ -28,11 +28,25 @@ keywords:
 apt update -y && apt install -y wget sudo
 ```
 
-一键脚本
+一键脚本(不要直接复制就用，注意代码里面有需要填的东西)
 
 ```
 wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh --ip-addr {内网ip} --ip-gate {内网网关} --ip-mask 255.255.255.0  -dd 'https://oss.sunpma.com/Windows/Win_Server2022_64_Administrator_nat.ee.gz'
 ```
+
+##### 报错Error! grub.cfg.解决方案
+
+`cd /boot && ls -lha`
+
+应该会看到只有一个grub文件夹,而grub2的配置文件通常为`/boot/grub2`
+
+所以很有可能是由于没有grub2文件夹导致的
+
+`mkdir /boot/grub2 && grub-mkconfig -o /boot/grub2/grub.cfg`创建一个grub2文件夹后再尝试即可
+
+---
+
+等待一段时间
 
 用户名：Administrator
 密码：nat.ee
