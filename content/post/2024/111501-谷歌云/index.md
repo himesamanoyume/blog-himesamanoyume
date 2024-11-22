@@ -58,3 +58,5 @@ wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/Li
 运行脚本后尽快用远程控制输入公网ip进行连接后修改密码
 
 否则容易被扫到改密
+
+> 目前是发现使用Debian, c2d-highcpu, 128g ssd的成功率很高
