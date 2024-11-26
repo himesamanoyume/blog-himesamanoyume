@@ -13,7 +13,26 @@
             <div class="post-container">
                 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Section) }}
                 {{ range $paginator.Pages }}
-                    {{ if not .Params.hidden }}
+                    {{ if .Params.hidden }}
+                        {{ if .Params.isred }}
+                        <div class="post" style="min-height: 50px;box-shadow: 3px 0 0 0 rgb(216, 89, 89) inset;" >
+                        {{ else }}
+                        <div class="post" style="min-height: 50px;" >
+                        {{ end }}
+                            <div class="post-Img-container" style="max-height:500px;justify-content: center;display: inline-flex;flex-wrap: wrap;-ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;flex: none;">
+                            </div>
+                            <div class="post-txt-container">
+                                <section class="post-detail-txt">
+                                    <p>此动态已隐藏</p>
+                                </section>
+                                <div class="post-txt-container-datetime">
+                                    {{printf "%s" (.Date.Format "2006-01-02 15:04")}}
+                                    <span class="important">{{.Keywords}}</span>
+                                    {{ .Description }}
+                                </div>
+                            </div>
+                        </div>
+                    {{ else }}
                         {{ if .Params.isred }}
                         <div class="post" style="min-height: 50px;box-shadow: 3px 0 0 0 rgb(216, 89, 89) inset;" >
                         {{ else }}
