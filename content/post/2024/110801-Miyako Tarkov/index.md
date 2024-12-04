@@ -28,6 +28,8 @@ keywords:
 - **[friendlyPMC](https://hub.sp-tarkov.com/files/file/989-friendly-pmc/#versions)[未适配3.10]**
 - - [原作者源码](https://bitbucket.org/pitvenin/friendlypmc/src/main/)
 - - [我的源码](https://bitbucket.org/himesamanoyume/friendlypmc/src/main/)
+- - [尝试实现适配联机时别人也无法掠夺跟随者物品1](https://bitbucket.org/pitvenin/friendlypmc/commits/d70e27b81e2a96ffbd018638583d19dece25df2f),[2](https://bitbucket.org/pitvenin/friendlypmc/commits/1b6385a100aa157077a59f1e8ea43396194d4c2b)
+- - - 已知跟随者装备锁定只对主机有效,但是当联机时,会每人各生成一个小队,此时是否别的小队的装备是否可以掠夺,别的小队长的可掠夺情况又是如何
 
 - [ModSync](https://github.com/himesamanoyume/ModSync)
 - - **需要重新克隆,进行汉化后编译**
@@ -146,7 +148,7 @@ AI敌人尽可能模拟真人行为。
 
 **autoprofilebackup**
 
-- 在特定时间自动备份存档,免受坏档困扰
+- 在特定时间(登录游戏时,战局开始时,战局结束时,退出游戏时)自动备份存档,免受坏档困扰
 
 **UIFixes**
 
