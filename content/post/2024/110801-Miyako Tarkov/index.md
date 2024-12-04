@@ -1,7 +1,7 @@
 ---
 title: 'Miyako Tarkov'
-date: 2024-11-08T00:00:00+08:00
-description: '私服v1.2'
+date: 2024-12-05T00:00:00+08:00
+description: '私服v1.3'
 keywords:
   - '文章'
 ---
@@ -10,9 +10,7 @@ keywords:
 
 > SPT3.10.X 塔科夫0.15.5.1.33420 筹备中
 
-将改为公网docker部署
-
-注意:不得使用mods在windows下生成的.js和.js.map文件,其映射的为系统盘的路径,在linux下不适用
+将改为公网部署
 
 # MOD添加清单
 
