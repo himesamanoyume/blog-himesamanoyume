@@ -16,7 +16,11 @@ keywords:
 
 ## Client Mods
 
-- [ ] **[SAIN](https://hub.sp-tarkov.com/files/file/1062-sain-solarint-s-ai-modifications-full-ai-combat-system-replacement/?highlight=sain#versions)[未适配3.10]**
+- [ ] ~~**[SAIN](https://hub.sp-tarkov.com/files/file/1062-sain-solarint-s-ai-modifications-full-ai-combat-system-replacement/?highlight=sain#versions)[未适配3.10]**~~
+- - 弃用
+
+- [ ] ~~**[NoBushESP](https://hub.sp-tarkov.com/files/file/903-no-bush-esp/?highlight=no#versions)[未适配3.10]**~~
+- - 弃用
 
 - [x] [Waypoints](https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-navmesh/?highlight=waypo#versions)
 

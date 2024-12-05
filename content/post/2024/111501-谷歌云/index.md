@@ -33,7 +33,6 @@ wget -qO- inst.sh | bash
 然后会要求你的输入target,这时就复制一个想要dd的直链进去即可
 
 ```
-wget -qO- inst.sh|bash -s - -选项名 选项值 -t 目标值
 
                           —————————————————————————————————————————————————
    * 指定debian镜像源:     | -m github/gitee/xxxx | -t debian               | * debian是原生方式
@@ -63,7 +62,7 @@ wget -qO- inst.sh|bash -s - -选项名 选项值 -t 目标值
 
 > 此部分已弃用
 
-因为该系统资源站似乎会炸,导致vps无限等待,下不完东西
+因为该系统资源站可能会改域名,下载不了东西就会导致vps无限等待
 
 ### 谷歌云DD Windows 一键脚本
 
@@ -76,7 +75,7 @@ apt update -y && apt install -y wget sudo
 一键脚本(不要直接复制就用，注意代码里面有需要填的东西)
 
 ```
-wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh --ip-addr {内网ip} --ip-gate {内网网关} --ip-mask 255.255.255.0  -dd 'https://oss.sunpma.com/Windows/Win_Server2022_64_Administrator_nat.ee.gz'
+wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh --ip-addr {内网ip} --ip-gate {内网网关} --ip-mask 255.255.255.0  -dd 'https://oss.suntl.com/Windows/Win_Server2022_64_Administrator_nat.ee.gz'
 ```
 
 ##### 报错Error! grub.cfg.解决方案
@@ -98,7 +97,7 @@ wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/Li
 
 用户名和密码根据链接上的决定
 
-换系统链接到[这](https://oss.sunpma.com/?Windows)
+换系统链接到[这](http://oss.suntl.com/?Windows)
 
 运行脚本后尽快用远程控制输入公网ip进行连接后修改密码
 
