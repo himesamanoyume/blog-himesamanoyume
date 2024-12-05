@@ -16,65 +16,65 @@ keywords:
 
 ## Client Mods
 
-- **[SAIN](https://hub.sp-tarkov.com/files/file/1062-sain-solarint-s-ai-modifications-full-ai-combat-system-replacement/?highlight=sain#versions)[未适配3.10]**
+- [ ] **[SAIN](https://hub.sp-tarkov.com/files/file/1062-sain-solarint-s-ai-modifications-full-ai-combat-system-replacement/?highlight=sain#versions)[未适配3.10]**
 
-- [Waypoints](https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-navmesh/?highlight=waypo#versions)
+- [x] [Waypoints](https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-navmesh/?highlight=waypo#versions)
 
-- [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
+- [x] [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
 - - [汉化补丁](https://sns.oddba.cn/136048.html)
 
-- **[friendlyPMC](https://hub.sp-tarkov.com/files/file/989-friendly-pmc/#versions)[未适配3.10]**
+- [ ] **[friendlyPMC](https://hub.sp-tarkov.com/files/file/989-friendly-pmc/#versions)[未适配3.10]**
 - - [原作者源码](https://bitbucket.org/pitvenin/friendlypmc/src/main/)
 - - [我的源码](https://bitbucket.org/himesamanoyume/friendlypmc/src/main/)
 - - [尝试实现适配联机时别人也无法掠夺跟随者物品1](https://bitbucket.org/pitvenin/friendlypmc/commits/d70e27b81e2a96ffbd018638583d19dece25df2f),[2](https://bitbucket.org/pitvenin/friendlypmc/commits/1b6385a100aa157077a59f1e8ea43396194d4c2b)
 - - - 已知跟随者装备锁定只对主机有效,但是当联机时,会每人各生成一个小队,此时是否别的小队的装备是否可以掠夺,别的小队长的可掠夺情况又是如何
 
-- [ModSync](https://github.com/himesamanoyume/ModSync)
+- [x] [ModSync](https://github.com/himesamanoyume/ModSync)
 - - **需要重新克隆,进行汉化后编译**
 
-- [MoreCheckmarks](https://hub.sp-tarkov.com/files/file/1159-morecheckmarks/?highlight=MoreCheckmarks#versions)
+- [x] [MoreCheckmarks](https://hub.sp-tarkov.com/files/file/1159-morecheckmarks/?highlight=MoreCheckmarks#versions)
 - - [汉化补丁](https://sns.oddba.cn/136078.html)
 
-- [QuickSell](https://hub.sp-tarkov.com/files/file/2318-quicksell/?highlight=QuickSell#versions)
+- [x] [QuickSell](https://hub.sp-tarkov.com/files/file/2318-quicksell/?highlight=QuickSell#versions)
 - - [汉化补丁](https://sns.oddba.cn/143051.html)
 
-- [BigBrain](https://hub.sp-tarkov.com/files/file/1219-bigbrain/?highlight=BigBrain#versions)
+- [x] [BigBrain](https://hub.sp-tarkov.com/files/file/1219-bigbrain/?highlight=BigBrain#versions)
 
-- [QuickMoveToContainer](https://hub.sp-tarkov.com/files/file/1859-quick-move-to-containers/?highlight=Quick%20Move#versions)
+- [x] [QuickMoveToContainer](https://hub.sp-tarkov.com/files/file/1859-quick-move-to-containers/?highlight=Quick%20Move#versions)
 
-- [Fika](https://github.com/himesamanoyume/Fika-Plugin)
+- [x] [Fika](https://github.com/himesamanoyume/Fika-Plugin)
 - - **已汉化并个性化处理,需要重新克隆编译**
 
-- [ItemSellPrice](https://hub.sp-tarkov.com/files/file/1230-item-sell-price/?highlight=Item%20Sell%20Price#versions)
+- [x] [ItemSellPrice](https://hub.sp-tarkov.com/files/file/1230-item-sell-price/?highlight=Item%20Sell%20Price#versions)
 - - [需要自行编译,去除Knight商人](https://dev.sp-tarkov.com/IcyClawz/ClientMods)
 
-- [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
+- [x] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
 
-- [Skipper](https://hub.sp-tarkov.com/files/file/1861-skipper/?highlight=Skipper#versions)
+- [x] [Skipper](https://hub.sp-tarkov.com/files/file/1861-skipper/?highlight=Skipper#versions)
 - - **想自己编译一下进行汉化:https://github.com/TerkoizLT/SPT-Skipper**
 
-- [UIFixes](https://hub.sp-tarkov.com/files/file/1860-ui-fixes/?highlight=UI%20Fix)
+- [x] [UIFixes](https://hub.sp-tarkov.com/files/file/1860-ui-fixes/?highlight=UI%20Fix)
 - - [汉化](https://sns.oddba.cn/139386.html)
 
-- [UnityToolKit](https://hub.sp-tarkov.com/files/file/1976-unitytoolkit/?highlight=UnityToolKit#versions)
+- [x] [UnityToolKit](https://hub.sp-tarkov.com/files/file/1976-unitytoolkit/?highlight=UnityToolKit#versions)
 
 ## Server Mods
 
-- [ExpandedTaskText](https://hub.sp-tarkov.com/files/file/1415-expanded-task-text-ett/?highlight=Expanded%20Task%20Text#versions)
+- [x] [ExpandedTaskText](https://hub.sp-tarkov.com/files/file/1415-expanded-task-text-ett/?highlight=Expanded%20Task%20Text#versions)
 - - [汉化补丁](https://sns.oddba.cn/142846.html)
 
-- **[autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)**
+- [ ] **[autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)**
 - - 暂时没有新版本,但应该直接通用
 - - docker下需要将mod.ts中的`this.profilePath`这部分改为容器目录且不是本机目录的profile路径,如`/opt/server/user/profile`
 
-- **[betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[未适配3.10]**
+- [ ] **[betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[未适配3.10]**
 
-- [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
+- [x] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
 
-- [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
+- [x] [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
 - - [汉化补丁](https://sns.oddba.cn/136048.html)
 
-- **[LiveFleaPrices](https://hub.sp-tarkov.com/files/file/1561-live-flea-prices/#versions)[未适配3.10]**
+- [ ] **[LiveFleaPrices](https://hub.sp-tarkov.com/files/file/1561-live-flea-prices/#versions)[未适配3.10]**
 - - 修改镜像(国内环境则无需修改):https://raw.gitmirror.com/DrakiaXYZ/SPT-LiveFleaPriceDB/main/prices-${gameMode}.json
 
 ## 整合包特色 v1.3
