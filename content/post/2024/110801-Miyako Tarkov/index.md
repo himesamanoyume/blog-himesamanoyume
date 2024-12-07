@@ -67,8 +67,8 @@ keywords:
 - [x] [ExpandedTaskText](https://hub.sp-tarkov.com/files/file/1415-expanded-task-text-ett/?highlight=Expanded%20Task%20Text#versions)
 - - [汉化补丁](https://sns.oddba.cn/142846.html)
 
-- [ ] **[autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)**
-- - 暂时没有新版本,但应该直接通用
+- [x] [autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)
+- - ~~暂时没有新版本,但应该直接通用~~没有什么是改不了
 - - 如果在docker下使用,则需要将mod.ts中的`this.profilePath`这部分改为容器目录且不是本机目录的profile路径,如`/opt/server/user/profile`
 
 - [ ] **[betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[未适配3.10]**
