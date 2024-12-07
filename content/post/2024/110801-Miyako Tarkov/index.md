@@ -52,7 +52,7 @@ keywords:
 - [x] [ItemSellPrice](https://hub.sp-tarkov.com/files/file/1230-item-sell-price/?highlight=Item%20Sell%20Price#versions)
 - - [需要自行编译,去除Knight商人](https://dev.sp-tarkov.com/IcyClawz/ClientMods)
 
-- [x] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
+- [ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
 
 - [x] [Skipper](https://hub.sp-tarkov.com/files/file/1861-skipper/?highlight=Skipper#versions)
 - - **想自己编译一下进行汉化:https://github.com/TerkoizLT/SPT-Skipper**
@@ -69,11 +69,11 @@ keywords:
 
 - [ ] **[autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)**
 - - 暂时没有新版本,但应该直接通用
-- - docker下需要将mod.ts中的`this.profilePath`这部分改为容器目录且不是本机目录的profile路径,如`/opt/server/user/profile`
+- - 如果在docker下使用,则需要将mod.ts中的`this.profilePath`这部分改为容器目录且不是本机目录的profile路径,如`/opt/server/user/profile`
 
 - [ ] **[betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[未适配3.10]**
 
-- [x] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
+- [ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
 
 - [x] [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
 - - [汉化补丁](https://sns.oddba.cn/136048.html)
