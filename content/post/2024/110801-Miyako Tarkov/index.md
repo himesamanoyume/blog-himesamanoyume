@@ -48,6 +48,8 @@ keywords:
 
 - [x] [Fika](https://github.com/himesamanoyume/Fika-Plugin)
 - - **已汉化并个性化处理,需要重新克隆编译**
+- - [ ] 可能使用:[Fika-Dedicated](https://github.com/project-fika/Fika-Dedicated)
+- - - 由于Miyako专版Fika是以最新源码编译,似乎导致了版本较后的Fika-Dedicated与Fika-Core有功能偏差,因此无法使用
 
 - [x] [ItemSellPrice](https://hub.sp-tarkov.com/files/file/1230-item-sell-price/?highlight=Item%20Sell%20Price#versions)
 - - [需要自行编译,去除Knight商人](https://dev.sp-tarkov.com/IcyClawz/ClientMods)
@@ -67,18 +69,20 @@ keywords:
 - [x] [ExpandedTaskText](https://hub.sp-tarkov.com/files/file/1415-expanded-task-text-ett/?highlight=Expanded%20Task%20Text#versions)
 - - [汉化补丁](https://sns.oddba.cn/142846.html)
 
-- [x] [autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)
-- - ~~暂时没有新版本,但应该直接通用~~没有什么是改不了
+- [x] [autoprofilebackup](https://hub.sp-tarkov.com/files/file/1143-lua-s-auto-profile-backup-updated/#versions)[官方未适配3.10]
+- - 没有新版本,但改一下版本依赖就可以直接用
 - - 如果在docker下使用,则需要将mod.ts中的`this.profilePath`这部分改为容器目录且不是本机目录的profile路径,如`/opt/server/user/profile`
 
-- [ ] **[betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[未适配3.10]**
+- [x] [betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[官方未适配3.10]
+- - 但是似乎没有新钥匙所以可以改一下版本依赖就直接用
 
 - [ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
 
 - [x] [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
 - - [汉化补丁](https://sns.oddba.cn/136048.html)
 
-- [ ] **[LiveFleaPrices](https://hub.sp-tarkov.com/files/file/1561-live-flea-prices/#versions)[未适配3.10]**
+- [x] [LiveFleaPrices](https://hub.sp-tarkov.com/files/file/1561-live-flea-prices/#versions)[官方未适配3.10]
+- - 没有新版本,但改一下版本依赖就可以直接用
 - - 修改镜像(国内环境则无需修改):https://raw.gitmirror.com/DrakiaXYZ/SPT-LiveFleaPriceDB/main/prices-${gameMode}.json
 
 ## 整合包特色 v1.3
