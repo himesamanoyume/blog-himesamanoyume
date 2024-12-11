@@ -252,4 +252,156 @@ AI敌人尽可能模拟真人行为。
 
 ---
 
-> **写给自己**：公网IP开服一定要记得给梯子加直连规则,使用代理会连不上服务器
+**写给自己**：公网IP开服一定要记得给梯子加直连规则,使用代理会连不上服务器
+
+# 记录docker开服+fika专用客户端
+
+不知道究竟是因为linux dd了windows导致了性能损耗还是vCPU或者硬盘的性能不太够,GCP的第二代机器用来作为Fika的专用客户端一直很垃圾
+
+我开个灯塔，要等足足14分钟，完美还原NJT匹配体验
+
+直到我在新加坡开出了第四代机器，使用了Hyperdisk硬盘，Linux搭建1panel面板使用docker开服后，一切都有了转变
+
+cpu性能和硬盘的大幅提升是加载速度变快的主要因素
+
+甚至已经达到了跟我电脑同等的加载速度，开一局灯塔我加载完刚好专用客户端也加载完了，马上战局就倒计时开始，在我吃了之前那么多的史之后，直接把我惊到了
+
+终于实现了离线版自己一个人玩还不用自己电脑出算力计算AI，简直不要太爽
+
+因此在这记录开服的几个重要步骤，以后开服我必定继续仰赖GCP C4机器
+
+## 选机器
+
+亚太地区只有新加坡的配额能开出4核8vCPU,60G的机器
+
+## 前期准备
+
+1panel,防火墙,游戏本体整合包
+
+## 安装
+
+### Docker
+
+### Docker服务器容器 fika-spt-server-docker
+
+[fika-spt-server-docker](https://github.com/zhliau/fika-spt-server-docker)
+
+因为我使用3.10.1所以这么写
+
+```docker
+docker run --name fika-server \
+  -e LISTEN_ALL_NETWORKS=true \
+  -v /path/to/server/files:/opt/server \
+  -p 6969:6969 \
+  --network host \
+  ghcr.io/zhliau/fika-spt-server-docker:3.10.1
+```
+
+官方教程的为
+
+```docker
+docker run --name fika-server \
+  -e INSTALL_FIKA=true \
+  -e LISTEN_ALL_NETWORKS=true \
+  -v /path/to/server/files:/opt/server \
+  -p 6969:6969 \
+  ghcr.io/zhliau/fika-spt-server-docker:3.10.2
+```
+
+我是不想让他自动安装fika的，而是先创建完容器之后，在本机电脑调试完成服务端后再把mod核设置等全部上传至容器路径中
+
+#### Docker专用客户端容器 fika-headless-docker
+
+[fika-headless-docker](https://github.com/zhliau/fika-headless-docker)
+
+```docker
+docker run --name fika_dedicated \
+  -v {游戏本体路径}:/opt/tarkov \
+  -e PROFILE_ID={填专用客户端存档的ID} \
+  -e USE_MODSYNC=true \
+  -e SERVER_URL={服务器公网ip} \
+  -e AUTO_RESTART_ON_RAID_END=true \
+  -e SERVER_PORT=6969 \
+  -p 25565:25565/udp \
+  --network host \
+  ghcr.io/zhliau/fika-headless-docker:latest
+```
+
+官方是这样的
+
+```docker
+docker run --name fika_dedicated \
+  -v {游戏本体路径}:/opt/tarkov \
+  -e PROFILE_ID={填专用客户端存档的ID} \
+  -e SERVER_URL={服务器公网ip} \
+  -e SERVER_PORT=6969 \
+  -p 25565:25565/udp \
+  ghcr.io/zhliau/fika-headless-docker:latest
+```
+
+##### 其中几个重点,其余细节不多说
+
+1. 如何在linux上下载好游戏本体
+
+我是通过Onedrive来存放整合包的,[点击这里查看linux下载Onedrive分享文件的方法](#onedrive)
+
+2. 如何让专用客户端能正常连接上其他客户端
+
+SERVER_URL**一定要直接填公网IP**，不要填`127.0.0.1`,`0.0.0.0`，哪怕是同一台机器
+
+但是`BepInEx/config`中`com.fika.core.cfg`的`强制绑定IP(Force Bind IP)`和`强制IP(Force IP)`就要填`0.0.0.0`了
+
+## 其他可能会用到的
+
+**符号链接**
+
+`ln -s <被链接的路径> <将被链接的路径>`
+
+可以用来链接`EscapeFromTarkov_Data`到另一个专用客户端路径中，减少存储的浪费
+
+但是现在docker还有问题，一台机器上暂时无法运行第二个专用客户端容器
+
+<div id="onedrive"></div>
+
+## Linux下载Onedrive文件
+
+在网页onedrive目录上打开F12，切换到网络，筛选器填`aspx`
+
+对想下载的文件点下载，然后马上关掉已经开始的下载
+
+看F12找到对应了文件大小的那一项,右键`复制`->`复制为cURL命令(bash)`，会得到一大段东西
+
+```
+curl 'XXX/_layouts/15/download.aspx?UniqueId=XXX' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7' \
+  ....
+  ....
+  ....
+  -H 'sec-gpc: 1' \
+  -H 'service-worker-navigation-preload: {"supportsFeatures":[1855,61313]}' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+```
+
+在最后加上` \`然后换行再机上`--output 文件名.后缀`
+
+文件名不能带路径，没用，会全部当成文件名写上去
+
+```
+curl 'XXX/_layouts/15/download.aspx?UniqueId=XXX' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7' \
+  ....
+  ....
+  ....
+  -H 'sec-gpc: 1' \
+  -H 'service-worker-navigation-preload: {"supportsFeatures":[1855,61313]}' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \
+  --output 文件名.后缀
+```
+
+到SSH终端输入即可下载，至于要怎么找到在哪就看你自己了，应该是在`root`下吧
+
+还有一点这个方法不能多个下载，适合下载一个单独的大文件
