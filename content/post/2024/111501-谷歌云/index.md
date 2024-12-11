@@ -20,6 +20,30 @@ keywords:
 
 5、登录老的谷歌云账号，点击结算->账号管理，修改项目的结算账号，改为刚刚定义的新的结算账号，至此设置完毕，可以看到新的300美金了
 
+## 创建SSH
+
+```
+ssh-keygen -t rsa -f ~/.ssh/{KEY_FILENAME} -C {USERNAME}
+```
+
+> `KEY_FILENAME`：您的 SSH 密钥文件的名称。<br><br>例如，如果文件名为 my-ssh-key，则系统会生成一个名为 my-ssh-key 的私钥文件和一个名为 my-ssh-key.pub 的公钥文件。<br><br>`USERNAME`：虚拟机上的用户名。例如 cloudysanfrancisco 或 cloudysanfrancisco_gmail_com。<br><br>对于 Linux 虚拟机，除非您将虚拟机配置为允许 root 登录，否则 USERNAME 不能为 root。如需了解详情，请参阅以根用户身份连接到 Linux 虚拟机。
+
+`ssh-keygen` 将您的私钥文件保存到 `~/.ssh/KEY_FILENAME`，并将公钥文件保存到 `~/.ssh/KEY_FILENAME.pub`
+
+用户 `cloudysanfrancisco` 的公钥类似于以下内容：
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAu5kKQCPF... cloudysanfrancisco
+```
+
+到生成的密钥路径处将不带后缀的那个文件打开，其中包含了私钥信息，下载下来
+
+随后到GCP的云数据处添加SSH密钥，填入公钥
+
+在第三方SSH客户端导入私钥文件,登录
+
+*就是好像GCP的ssh登录即使sudo -i了也没有权限的样子，上传不了东西*
+
 ## DD脚本
 
 针对第二第三个脚本：两个脚本各有所长,最高性能的AMD主机只有不带进度条的脚步能使用,原因是最高性能的主机必选网络接口,而当选择接口后带进度条的dd脚步就会卡住。然而即使使用不带进度条的脚本,只要谷歌云**开启了显示设备**,就能直接看到屏幕截图,所以其实无所谓,进度条指的是下载的进度条
