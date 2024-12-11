@@ -319,11 +319,10 @@ docker run --name fika_dedicated \
   -v {游戏本体路径}:/opt/tarkov \
   -e PROFILE_ID={填专用客户端存档的ID} \
   -e USE_MODSYNC=true \
-  -e SERVER_URL={服务器公网ip} \
+  -e SERVER_URL={服务器公网ip/服务器域名} \
   -e AUTO_RESTART_ON_RAID_END=true \
   -e SERVER_PORT=6969 \
-  -p 25565:25565/udp \
-  --network host \
+  -p {默认25565}:{默认25565}/udp \
   ghcr.io/zhliau/fika-headless-docker:latest
 ```
 
@@ -333,13 +332,13 @@ docker run --name fika_dedicated \
 docker run --name fika_dedicated \
   -v {游戏本体路径}:/opt/tarkov \
   -e PROFILE_ID={填专用客户端存档的ID} \
-  -e SERVER_URL={服务器公网ip} \
+  -e SERVER_URL={服务器公网ip/服务器域名} \
   -e SERVER_PORT=6969 \
   -p 25565:25565/udp \
   ghcr.io/zhliau/fika-headless-docker:latest
 ```
 
-##### 其中几个重点,其余细节不多说
+##### 其中几个重点,其余细节不多说。并且第二第三点内容可作为连接不上专用客户端时的自查清单
 
 1. 如何在linux上下载好游戏本体
 
@@ -347,9 +346,26 @@ docker run --name fika_dedicated \
 
 2. 如何让专用客户端能正常连接上其他客户端
 
-SERVER_URL**一定要直接填公网IP**，不要填`127.0.0.1`,`0.0.0.0`，哪怕是同一台机器
+- SERVER_URL**一定要直接填公网IP**或**域名**，不要填`127.0.0.1`,`0.0.0.0`，哪怕是同一台机器
 
-但是`BepInEx/config`中`com.fika.core.cfg`的`强制绑定IP(Force Bind IP)`和`强制IP(Force IP)`就要填`0.0.0.0`了
+- `BepInEx/config`中`com.fika.core.cfg`的和`强制IP(Force IP)`**只能**填`公网IP`
+
+如果使用临时公网IP的话，最好选择固定IP，因为`com.fika.core.cfg`内的IP不能填域名
+
+注意有些时候里面的内容会出现仍未被我汉化过的配置名，改值的时候千万要记得全部改了，不要改了英文的配置，中文的配置没改，使用中文配置的客户端就可能无法连接
+
+3. 单服务器多个开多个专用客户端的方式
+
+- 将整合游戏本体复制一份，然后再用docker run命令对应生成一个新容器。经过测试，`EscapeFromTarkov_Data`不能用符号链接的，只能全部复制
+
+- **容器网络要选择`bridge`**
+
+- **udp端口要改掉，如`25566:25566`,那么`com.fika.core.cfg`中的udp端口也要对应改掉为`25566`**
+
+- **同时其他配置要满足`2.`，并且别忘记开防火墙，限制20G内存**
+
+- 记得到fika-server的`/user/mods/fika-server/assets/configs/fika.jsonc`中修改配置来生成专用客户端存档,forceIP可填域名/IP，无所谓，因为docker下是用不到他生成的bat脚本的，一定要点开profile中的对应存档查看ID来填入到docker中
+
 
 ## 其他可能会用到的
 
@@ -357,9 +373,8 @@ SERVER_URL**一定要直接填公网IP**，不要填`127.0.0.1`,`0.0.0.0`，哪�
 
 `ln -s <被链接的路径> <将被链接的路径>`
 
-可以用来链接`EscapeFromTarkov_Data`到另一个专用客户端路径中，减少存储的浪费
+可以用来链接文件或文件夹到另一个路径中，减少存储的浪费
 
-但是现在docker还有问题，一台机器上暂时无法运行第二个专用客户端容器
 
 <div id="onedrive"></div>
 
