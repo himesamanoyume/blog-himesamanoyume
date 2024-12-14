@@ -338,6 +338,19 @@ docker run --name fika_dedicated \
   ghcr.io/zhliau/fika-headless-docker:latest
 ```
 
+如果在linux中使用`lua-autoprofilebackup`, 则到`mod.ts`
+```ts
+const dirArray = __dirname.split("\\");
+this.profilePath = `${dirArray[dirArray.length - 4]}/profiles`;
+```
+修改为
+```ts
+const dirArray = "/opt/server/user";
+this.profilePath = `${dirArray}/profiles`;
+```
+
+因为docker镜像的fika-server会每日备份一次`/user/profiles`，因此搭配`lua-autoprofilebackup`效果更好
+
 ##### 其中几个重点,其余细节不多说。并且第二第三点内容可作为连接不上专用客户端时的自查清单
 
 1. 如何在linux上下载好游戏本体
