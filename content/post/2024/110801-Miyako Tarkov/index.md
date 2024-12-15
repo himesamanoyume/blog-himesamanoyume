@@ -438,7 +438,7 @@ curl 'XXX/_layouts/15/download.aspx?UniqueId=XXX' \
 
 ```bash
 sudo apt update
-sudo apt-get install p7zip-full p7zip-rar
+sudo apt-get install p7zip-full
 ```
 
 ```bash
