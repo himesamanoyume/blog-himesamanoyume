@@ -433,3 +433,14 @@ curl 'XXX/_layouts/15/download.aspx?UniqueId=XXX' \
 到SSH终端输入即可下载，至于要怎么找到在哪就看你自己了，应该是在`root`下吧
 
 还有一点这个方法不能多个下载，适合下载一个单独的大文件
+
+## Linux解压超过4GB大小文件的方法
+
+```bash
+sudo apt update
+sudo apt-get install p7zip-full p7zip-rar
+```
+
+```bash
+7z x xxx.zip
+```
