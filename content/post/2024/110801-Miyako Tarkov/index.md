@@ -30,7 +30,6 @@ keywords:
 - [ ] **[friendlyPMC](https://hub.sp-tarkov.com/files/file/989-friendly-pmc/#versions)[未适配3.10]**
 - - [原作者源码](https://bitbucket.org/pitvenin/friendlypmc/src/main/)
 - - [我的源码](https://bitbucket.org/himesamanoyume/friendlypmc/src/main/)
-- - [尝试实现适配联机时别人也无法掠夺跟随者物品1](https://bitbucket.org/pitvenin/friendlypmc/commits/d70e27b81e2a96ffbd018638583d19dece25df2f),[2](https://bitbucket.org/pitvenin/friendlypmc/commits/1b6385a100aa157077a59f1e8ea43396194d4c2b)
 - - - 已知跟随者装备锁定只对主机有效,但是当联机时,会每人各生成一个小队,此时是否别的小队的装备是否可以掠夺,别的小队长的可掠夺情况又是如何
 
 - [x] [ModSync](https://github.com/himesamanoyume/ModSync)
@@ -54,7 +53,8 @@ keywords:
 - [x] [ItemSellPrice](https://hub.sp-tarkov.com/files/file/1230-item-sell-price/?highlight=Item%20Sell%20Price#versions)
 - - [需要自行编译,去除Knight商人](https://dev.sp-tarkov.com/IcyClawz/ClientMods)
 
-- [ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
+- ~~[ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)~~
+- - 弃用
 
 - [x] [Skipper](https://hub.sp-tarkov.com/files/file/1861-skipper/?highlight=Skipper#versions)
 - - **想自己编译一下进行汉化:https://github.com/TerkoizLT/SPT-Skipper**
@@ -76,7 +76,8 @@ keywords:
 - [x] [betterkeysupdated](https://hub.sp-tarkov.com/files/file/1963-better-keys-updated/#versions)[官方未适配3.10]
 - - 但是似乎没有新钥匙所以可以改一下版本依赖就直接用
 
-- [ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)
+- ~~[ ] [LootingBots](https://hub.sp-tarkov.com/files/file/1096-looting-bots/?highlight=looting#versions)~~
+- - 弃用
 
 - [x] [DynamicMaps](https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/?highlight=dy#versions)
 - - [汉化补丁](https://sns.oddba.cn/136048.html)
@@ -263,6 +264,8 @@ AI敌人尽可能模拟真人行为。
 直到我在新加坡开出了第四代机器，使用了Hyperdisk硬盘，Linux搭建1panel面板使用docker开服后，一切都有了转变
 
 cpu性能和硬盘的大幅提升是加载速度变快的主要因素
+
+> 现在看来cpu和硬盘的影响没有那么大,最主要原因估计还是dd了windows,因为使用n2d机器2c16G,ssd的情况下,灯塔只需3~5分钟,显著快于dd windows,不排除是由于新的dedicated mod优化了加载速度,但无论如何都已经达到了能玩的地步
 
 甚至已经达到了跟我电脑同等的加载速度，开一局灯塔我加载完刚好专用客户端也加载完了，马上战局就倒计时开始，在我吃了之前那么多的史之后，直接把我惊到了
 
