@@ -36,10 +36,6 @@ url: ''
         <p>
             <a href="https://www.pixiv.net/users/25760573" target="_blank">
                 @rurudo</a>,
-            <a href="https://www.pixiv.net/users/16731" target="_blank">
-                @<ruby>玉<rt class="ttt" data-rt="tama"></rt>
-                    之<rt class="ttt" data-rt="no"></rt>けだま
-                </ruby></a>,
             <a href="https://www.pixiv.net/users/16051830" target="_blank">
                 @Alpha</a>,
             <a href="https://www.pixiv.net/users/24234" target="_blank">
