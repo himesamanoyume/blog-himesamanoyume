@@ -12,19 +12,13 @@ url: ''
 
 <div class="main-post-content">
     <div class="main-post-content-txt">
-        <h4><span class="important">近期</h4>
+        <h4><span class="important">皮毛功夫</h4>
         <p>
-            Unity3D/C#/python/html/js/css/Unreal5/Blender
+            Unity3D/C#/python/html/css/javascript/React/typescript/Unreal5场景/Blender
         </p>
+        <h4><span class="important">About Me</h4>
         <p>
-            <ruby>宅<rt class="ttt" data-rt="Otaku"></rt>, 原教旨二次元游戏主义者。
-        </p>
-        <h4><span class="important">爱好</h4>
-        <p>
-            主要为<ruby>第一人称射击<rt class="ttt" data-rt="FPS"></rt></ruby>/<ruby>第三人称射击<rt class="ttt" data-rt="TPS"></rt></ruby>游戏, 但类型不受限。
-        </p>
-        <p>
-            日本新番。
+            原教旨二游主义；主玩射击游戏, 但类型不受限；追日本新番15+年。
         </p>
         <h4><span class="important">头像画师</span></h4>
         <p>
