@@ -1,6 +1,6 @@
 ---
 title: '傻逼EA App安装笔记'
-date: 2025-08-22T013:00:00+08:00
+date: 2025-08-22T13:00:00+08:00
 description: ''
 keywords:
   - '文章'
