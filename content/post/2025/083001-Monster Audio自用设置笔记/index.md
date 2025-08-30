@@ -14,7 +14,7 @@ Monster Audio是一款国产免费机架软件
 
 - 安装Monster Audio
 - 安装ASIO4ALL
-- 准备**Supertone Clear插件**(至关重要)
+- 准备[Supertone Clear插件](https://plugincrack.com/vst/supertone-clear/)(至关重要)
 
 ## 正式操作
 
